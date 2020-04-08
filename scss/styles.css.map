@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,GAAG;CAClB",
+    "sources": [
+        "styles.scss",
+        "utilities/_index.scss",
+        "utilities/_variables.scss",
+        "utilities/_mixins.scss",
+        "component/_index.scss",
+        "component/_button.scss",
+        "component/_header.scss",
+        "component/_main-content.scss",
+        "component/_sidebar-navigation.scss",
+        "base/_index.scss",
+        "base/_normalize.scss",
+        "base/_typography.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}
