@@ -16,3 +16,21 @@ $color-btn-tablets: #81c98f;
 $color-btn-v1: #7377bf;
 $color-btn-v2: #81c98f;
 $color-btn-v3: #b2b2b2;
+
+// FONTS
+$font-stack-primary: 'Inria Sans', sans-serif;
+
+// FONT WEIGHTS
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// GUTTER
+$gutter: .5rem;
+
+// MEDIA QUERIES [MOBILE FIRST APPROACH]
+$break-tablet: 768px;
+$break-laptop: 1024px;
+
+// MAX WIDTH
+$max-width-main: 60rem;
