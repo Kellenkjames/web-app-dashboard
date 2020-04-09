@@ -15,14 +15,64 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 2rem;
 }
 
 .header * {
   color: #FFFFFF;
 }
 
-.header h1 {
+.header .title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   font-size: 1.7rem;
+}
+
+.header .box {
+  margin-left: auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 6%;
+          flex: 0 0 6%;
+}
+
+.header .box svg {
+  position: relative;
+  display: block;
+  height: 1.5rem;
+  width: 100%;
+}
+
+.header .profile {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 2rem;
+}
+
+.header .profile::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  width: .1rem;
+  margin-top: .5rem;
+  background: #5d61bf;
+}
+
+.header .profile img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
