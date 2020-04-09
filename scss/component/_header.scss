@@ -1,0 +1,16 @@
+/* ============================================= */
+/*              HEADER                           */
+/* ============================================= */
+
+.header {
+    background-color: $color-primary-light;
+    @include flex-standard;
+
+    * {
+        color: $color-text-light;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+}

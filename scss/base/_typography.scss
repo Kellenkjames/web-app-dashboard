@@ -1,0 +1,14 @@
+// TYPOGRAPHY
+
+html {
+    font-size: $font-base-default;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: $font-stack-primary;
+    line-height: 1.3;
+    padding: 0;
+}
