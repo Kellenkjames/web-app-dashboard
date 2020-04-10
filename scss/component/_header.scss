@@ -14,12 +14,29 @@
     .title {
         flex: 0 0 auto;
         font-size: 1.7rem;
+
+        span {
+            font-weight: $font-weight-light;
+        }
+    }
+
+    .inner-wrap {
+        @include flex-standard;
+        justify-content: flex-end;
     }
 
     .box {
-        margin-left: auto;
-        flex: 0 0 6%;
-
+        flex: 0 0 20%;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 2%;
+            right: 15%;
+            height: .7rem;
+            width: .7rem;
+            border-radius: 50%;
+            background: $color-btn-v2;
+        }
         svg {
             position: relative;
             display: block;
