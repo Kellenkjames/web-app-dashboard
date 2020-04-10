@@ -30,8 +30,9 @@ $font-weight-bold: 700;
 $gutter: .5rem;
 
 // MEDIA QUERIES [MOBILE FIRST APPROACH]
-$break-tablet: 768px;
 $break-laptop: 1024px;
+$break-tablet: 768px;
+$break-mobile: 320px;
 
 // MAX WIDTH
 $max-width-main: 60rem;

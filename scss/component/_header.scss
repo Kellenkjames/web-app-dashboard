@@ -5,7 +5,7 @@
 .header {
     background-color: $color-primary-light;
     @include flex-standard;
-    padding: 0 2rem;
+    padding: .5rem 2rem;
 
     * {
         color: $color-text-light;
@@ -30,10 +30,10 @@
         &::after {
             content: '';
             position: absolute;
-            top: 2%;
-            right: 15%;
-            height: .7rem;
-            width: .7rem;
+            top: 2.8%;
+            right: 15.4%;
+            height: .5rem;
+            width: .5rem;
             border-radius: 50%;
             background: $color-btn-v2;
         }
