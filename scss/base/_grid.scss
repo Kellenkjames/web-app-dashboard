@@ -1,0 +1,33 @@
+// GRID & Flexbox Layout
+
+/* Based on the current design I can see that we have 3 columns and 7 rows */
+
+.grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(880px, auto));
+    grid-template-rows: 70px 135px repeat(2, minmax(380px, auto)) 230px repeat(2, minmax(380px, auto)); 
+    grid-template-areas: 
+        "header header header"
+        "nav main main"
+        "nav main main"
+        "nav main main"
+        "nav main main"
+        "nav main main"
+        "nav main main";
+
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+    background-color: blueviolet;
+}
+
+main {
+    grid-area: main;
+    background-color: green;
+}
