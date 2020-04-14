@@ -6,6 +6,7 @@
 /* ============================================= */
 .header {
   background-color: #7477bf;
+  padding: .5rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,25 +16,24 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: .5rem 2rem;
 }
 
 .header * {
   color: #FFFFFF;
 }
 
-.header .title {
+.header__title {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   font-size: 1.7rem;
 }
 
-.header .title span {
+.header__title__span {
   font-weight: 300;
 }
 
-.header .inner-wrap {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,21 +48,34 @@
           justify-content: flex-end;
 }
 
-.header .box {
+.header__container__alerts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 20%;
           flex: 0 0 20%;
 }
 
-.header .box svg {
+.header__container__alerts__accent {
+  background: #5d61bf;
+  height: 4rem;
+  width: .1rem;
+}
+
+.header__container__alerts__svg {
   position: relative;
   display: block;
   height: 1.5rem;
   width: 100%;
 }
 
-.header .profile {
+.header__container__profile {
   position: relative;
+  padding-left: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,21 +85,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 2rem;
 }
 
-.header .profile::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 4rem;
-  width: .1rem;
-  margin-top: .5rem;
-  background: #5d61bf;
-}
-
-.header .profile img {
+.header__container__profile__img {
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
@@ -453,11 +454,10 @@ body {
   height: 100vh;
   display: -ms-grid;
   display: grid;
-  overflow: hidden;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: (100px)[2] minmax(100vh, auto);
-      grid-template-rows: repeat(2, 100px) minmax(100vh, auto);
+  -ms-grid-rows: (150px)[2] minmax(auto-fit, 1fr);
+      grid-template-rows: repeat(2, 150px) minmax(auto-fit, 1fr);
       grid-template-areas: "header" "nav" "main";
 }
 

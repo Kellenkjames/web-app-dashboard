@@ -3,9 +3,8 @@
 .grid {
     height: 100vh;
     display: grid;
-    overflow: hidden;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 100px) minmax(100vh, auto); 
+    grid-template-rows: repeat(2, 150px) minmax(auto-fit, 1fr); 
     grid-template-areas: 
         "header"
         "nav"
@@ -42,9 +41,4 @@ main {
         "nav main main";
     }
 
-}
-
-@media screen and (min-width: 1024px) {
-
-    
 }
