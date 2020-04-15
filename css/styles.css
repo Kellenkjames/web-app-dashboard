@@ -95,6 +95,47 @@
 }
 
 /* ============================================= */
+/*              Main Dashboard                   */
+/* ============================================= */
+.main__dashboard {
+  padding-left: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__dashboard__search {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: beige;
+  border: 1px solid #dfdfdf;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 85%;
+          flex: 0 1 85%;
+}
+
+.main__dashboard__search__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 4%;
+}
+
+.main__dashboard__search [type="search"] {
+  width: 45%;
+  padding: .5rem;
+}
+
+/* ============================================= */
 /*              Sidebar Navigation               */
 /* ============================================= */
 .nav {

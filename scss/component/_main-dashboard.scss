@@ -1,0 +1,33 @@
+/* ============================================= */
+/*              Main Dashboard                   */
+/* ============================================= */
+
+.main {
+
+    &__dashboard {
+        padding-left: 4%;
+        @include flex-standard;
+    }
+    
+    &__dashboard__search {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: beige;
+        border: 1px solid #dfdfdf;
+        flex: 0 1 85%;
+    }
+
+    &__dashboard__search__box {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 4%;
+    }
+
+    &__dashboard__search [type="search"] {
+        width: 45%;
+        padding: .5rem;
+    }
+
+
+
+}
