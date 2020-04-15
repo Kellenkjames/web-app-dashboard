@@ -17,19 +17,18 @@ header {
 
 nav {
     grid-area: nav;
-    background-color: blueviolet;
 }
 
 main {
     grid-area: main;
-    background-color: green;
+    background-color: #ffffff;
 }
 
 /* Responsive */
 @media screen and (min-width: 768px) {
 
     .grid {
-        grid-template-columns: minmax(100px, auto) repeat(2, 2fr);
+        grid-template-columns: minmax(150px, auto) repeat(2, 2fr);
         grid-template-rows: 100px 120px repeat(2, minmax(500px, auto)) 300px repeat(2, minmax(400px, auto));
         grid-template-areas: 
         "header header header"
