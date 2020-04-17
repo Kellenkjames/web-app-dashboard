@@ -151,14 +151,35 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-radius: 5px;
+  padding: 0 2%;
 }
 
 .main__alert__desc {
   color: #FFFFFF;
+}
+
+.main__alert__icon {
+  color: #FFFFFF;
+  fill: currentColor;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: block;
+  font-size: 1.2rem;
+  opacity: .5;
+  cursor: pointer;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+.main__alert__icon:hover {
+  opacity: 1;
 }
 
 /* ============================================= */
