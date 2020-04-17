@@ -9,10 +9,6 @@
     &__header {
         @include flex-standard;
         
-        &__title {
-            text-transform: uppercase;
-            font-weight: $font-weight-light;
-        }
     }
     
     &__nav {
