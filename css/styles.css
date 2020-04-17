@@ -98,7 +98,6 @@
 /*              Main Dashboard                   */
 /* ============================================= */
 .main__dashboard {
-  padding-left: 4%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,7 +126,7 @@
 .main__dashboard__search__icon {
   position: absolute;
   top: 12%;
-  left: calc(100% - 7.5rem);
+  left: calc(100% - 8.5rem);
   width: 2rem;
   max-width: 100%;
 }
@@ -146,8 +145,7 @@
 /* ============================================= */
 .main__alert {
   background-color: #7377bf;
-  width: 95%;
-  margin: 2rem auto 0;
+  margin: 2rem 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,6 +183,57 @@
 /* ============================================= */
 /*              Traffic                          */
 /* ============================================= */
+.traffic {
+  padding-top: 2rem;
+}
+
+.traffic__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.traffic__header__title {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.traffic__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.traffic__nav__link {
+  cursor: pointer;
+  padding: .5rem 5%;
+  border-radius: 2rem;
+  -webkit-transition: background-color .3s ease-in, color .3s ease-in;
+  transition: background-color .3s ease-in, color .3s ease-in;
+}
+
+.traffic__nav__link:hover {
+  background-color: #81c98f;
+  color: #FFFFFF;
+}
+
+.traffic__nav__link--active {
+  background-color: #81c98f;
+  color: #FFFFFF;
+  padding: .5rem 5%;
+  border-radius: 2rem;
+}
+
+.traffic__nav__link:not(:first-child) {
+  margin-left: 2rem;
+}
+
 /* ============================================= */
 /*              Sidebar Navigation               */
 /* ============================================= */
@@ -619,6 +668,10 @@ li {
 ul {
   padding: 0;
   margin: 0;
+}
+
+.main {
+  margin: 0 2rem;
 }
 
 .grid {

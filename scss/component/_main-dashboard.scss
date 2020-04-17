@@ -5,7 +5,6 @@
 .main {
 
     &__dashboard {
-        padding-left: 4%;
         @include flex-standard;
     }
     
@@ -21,7 +20,7 @@
         &__icon {
             position: absolute;
             top: 12%;
-            left: calc(100% - 7.5rem);
+            left: calc(100% - 8.5rem);
             width: 2rem;
             max-width: 100%;
         }

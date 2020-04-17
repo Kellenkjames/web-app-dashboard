@@ -6,8 +6,7 @@
 
     &__alert {
         background-color: $color-primary;
-        width: 95%;
-        margin: 2rem auto 0;
+        margin: 2rem 0 0;
         @include flex-standard;
         border-radius: 5px;
         padding: 0 2%;
