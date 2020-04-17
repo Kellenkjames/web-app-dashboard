@@ -218,7 +218,7 @@
   transition: background-color .3s ease-in, color .3s ease-in;
 }
 
-.traffic__nav__link:hover {
+.traffic__nav__link:hover, .traffic__nav__link:focus, .traffic__nav__link:visited {
   background-color: #81c98f;
   color: #FFFFFF;
 }
