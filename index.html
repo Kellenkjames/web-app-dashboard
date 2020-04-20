@@ -36,7 +36,7 @@
 				</div><!-- Container for Avatar and Name -->
 				<div class="header__container__profile">
 					<img alt="profile image of user" class="header__container__profile__img" src="images/kj-avatar.jpg">
-					<h3>Kellen James</h3>
+					<h2>Kellen James</h2>
 				</div>
 			</div>
 		</header>
@@ -94,25 +94,14 @@
 		</nav>
 		<main class="main">
 			<!-- Dashboard Row-->
-			<div class="main__dashboard"> 
+			<div class="main__dashboard">
 				<h2 class="main__dashboard__headline">Dashboard</h2>
-				<div class="main__dashboard__search">
-					<input type="search" id="YourAppSearch" placeholder="Search">
-					<img class="main__dashboard__search__icon" src="https://img.icons8.com/pastel-glyph/64/000000/search--v2.png" alt="search icon"/>
-				</div>
-			</div>
-			<!-- Alert Bar-->
+				<div class="main__dashboard__search"><input id="YourAppSearch" placeholder="Search" type="search"> <img alt="search icon" class="main__dashboard__search__icon" src="https://img.icons8.com/pastel-glyph/64/000000/search--v2.png"></div>
+			</div><!-- Alert Bar-->
 			<div class="main__alert">
-				<p class="main__alert__desc">
-					<strong>Alert</strong>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odio, exercitationem non facere quaerat fugit deleniti.
-				</p>
-				<svg class="main__alert__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-					<path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"/>
-				</svg>
-				<!--JS will insert here -->
-			</div>
-			<!--line graph charts -->
+				<p class="main__alert__desc"><strong>Alert</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odio, exercitationem non facere quaerat fugit deleniti.</p><svg class="main__alert__icon" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+				<path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path></svg> <!--JS will insert here -->
+			</div><!--line graph charts -->
 			<section class="traffic">
 				<div class="traffic__header">
 					<h3 class="traffic__header__title">Traffic</h3>
@@ -126,16 +115,24 @@
 				<div class="widget-container-full">
 					<!-- Element line graph will attach to -->
 					<canvas id="traffic-chart"></canvas>
-				</div>
-				<!--Bar Graph -->
-				<section class="daily__traffic">
+				</div><!--Bar Graph -->
+			</section>
+			<div class="traffic__container">
+				<section class="traffic__container__half">
 					<h3>Daily Traffic</h3>
 					<div class="widget-container-half">
-					<!-- Element Bar Graph will attach to -->
+						<!-- Element Bar Graph will attach to -->
 						<canvas id="daily-chart"></canvas>
 					</div>
+				</section><!-- Doughnut Charts -->
+				<section class="traffic__container__half">
+					<h3>Mobile Users</h3>
+					<div class="widget-container-half">
+						<!-- Element Doughnut Graph will attach to -->
+						<canvas id="mobile-users"></canvas>
+					</div>
 				</section>
-			</section>
+			</div>
 		</main>
 	</div>
 </body>

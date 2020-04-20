@@ -16,11 +16,12 @@
         display: flex;
         justify-content: flex-end;
         width: 90%;
+        position: relative;
 
         &__icon {
             position: absolute;
-            top: 12%;
-            left: calc(100% - 8.5rem);
+            top: 30%;
+            left: calc(100% - 7.5rem);
             width: 2rem;
             max-width: 100%;
         }
@@ -32,7 +33,6 @@
         border: 1px solid #dfdfdf;
         border-radius: 5px;
         margin-right: 4%;
-        position: relative;
     }
 
 

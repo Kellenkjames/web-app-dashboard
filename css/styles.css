@@ -121,12 +121,13 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 90%;
+  position: relative;
 }
 
 .main__dashboard__search__icon {
   position: absolute;
-  top: 12%;
-  left: calc(100% - 8.5rem);
+  top: 30%;
+  left: calc(100% - 7.5rem);
   width: 2rem;
   max-width: 100%;
 }
@@ -137,7 +138,6 @@
   border: 1px solid #dfdfdf;
   border-radius: 5px;
   margin-right: 4%;
-  position: relative;
 }
 
 /* ============================================= */
@@ -145,7 +145,6 @@
 /* ============================================= */
 .main__alert {
   background-color: #7377bf;
-  margin: 2rem 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,10 +182,6 @@
 /* ============================================= */
 /*              Traffic                          */
 /* ============================================= */
-.traffic {
-  padding-top: 2rem;
-}
-
 .traffic__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,6 +198,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 30%;
 }
 
 .traffic__nav__link {
@@ -222,11 +218,24 @@
   background-color: #81c98f;
   color: #FFFFFF;
   padding: .5rem 5%;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .traffic__nav__link:not(:first-child) {
   margin-left: 2rem;
+}
+
+.traffic__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.traffic__container__half {
+  width: 50%;
 }
 
 /* ============================================= */
@@ -668,6 +677,7 @@ ul {
 h3 {
   text-transform: uppercase;
   font-weight: 300;
+  margin: 0;
 }
 
 .main {
@@ -701,7 +711,6 @@ main {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: main;
-  background-color: #ffffff;
 }
 
 /* Responsive */
@@ -709,9 +718,9 @@ main {
   .grid {
     -ms-grid-columns: minmax(150px, auto) (2fr)[2];
         grid-template-columns: minmax(150px, auto) repeat(2, 2fr);
-    -ms-grid-rows: 100px 120px (minmax(500px, auto))[2] 300px (minmax(400px, auto))[2];
-        grid-template-rows: 100px 120px repeat(2, minmax(500px, auto)) 300px repeat(2, minmax(400px, auto));
-        grid-template-areas: "header header header" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main";
+    -ms-grid-rows: 100px 91px 60px 375px 350px 230px (350px)[2];
+        grid-template-rows: 100px 91px 60px 375px 350px 230px repeat(2, 350px);
+        grid-template-areas: "header header header" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main";
   }
 }
 /*# sourceMappingURL=styles.css.map */

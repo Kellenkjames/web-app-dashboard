@@ -4,8 +4,6 @@
 
 .traffic {
     
-    padding-top: 2rem;
-    
     &__header {
         @include flex-standard;
         
@@ -13,6 +11,7 @@
     
     &__nav {
         display: flex;
+        width: 30%;
         
         &__link {
             cursor: pointer;
@@ -31,7 +30,7 @@
                 background-color: $color-btn-v2;
                 color: $color-text-light; 
                 padding: .5rem 5%;
-                border-radius: 2rem;
+                border-radius: 1rem;
             }
         }
         
@@ -40,6 +39,15 @@
         }
         
         
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+
+        &__half {
+            width: 50%;
+        }
     }
     
 }

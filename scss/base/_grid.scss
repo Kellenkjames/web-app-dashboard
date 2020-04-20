@@ -1,7 +1,7 @@
 // GRID Layout
 
 .main {
-    margin: 0 2rem;
+    margin: 0 2rem;  
 }
 
 .grid {
@@ -25,7 +25,6 @@ nav {
 
 main {
     grid-area: main;
-    background-color: #ffffff;
 }
 
 /* Responsive */
@@ -33,15 +32,16 @@ main {
 
     .grid {
         grid-template-columns: minmax(150px, auto) repeat(2, 2fr);
-        grid-template-rows: 100px 120px repeat(2, minmax(500px, auto)) 300px repeat(2, minmax(400px, auto));
+        grid-template-rows: 100px 91px 60px 375px 350px 230px repeat(2, 350px);
         grid-template-areas: 
-        "header header header"
-        "nav main main"
-        "nav main main"
-        "nav main main"
-        "nav main main"
-        "nav main main"
-        "nav main main";
+            "header header header"
+            "nav main main"
+            "nav main main"
+            "nav main main"
+            "nav main main"
+            "nav main main"
+            "nav main main"
+            "nav main main";
     }
 
 }
