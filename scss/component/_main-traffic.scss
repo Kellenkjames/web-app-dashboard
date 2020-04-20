@@ -3,6 +3,7 @@
 /* ============================================= */
 
 .traffic {
+    margin-bottom: 2rem;
     
     &__header {
         @include flex-standard;
@@ -44,6 +45,7 @@
     &__container {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 2rem;
 
         &__half {
             width: 50%;

@@ -184,6 +184,10 @@
 /* ============================================= */
 /*              Traffic                          */
 /* ============================================= */
+.traffic {
+  margin-bottom: 2rem;
+}
+
 .traffic__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,6 +238,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .traffic__container__half {
@@ -691,6 +696,10 @@ ul {
   margin: 0;
 }
 
+h2 {
+  margin: 0;
+}
+
 h3 {
   text-transform: uppercase;
   font-weight: 300;
@@ -741,8 +750,8 @@ main {
   .grid {
     -ms-grid-columns: minmax(150px, auto) (2fr)[2];
         grid-template-columns: minmax(150px, auto) repeat(2, 2fr);
-    -ms-grid-rows: 100px 91px 120px minmax(500px, auto) minmax(350px, auto) minmax(230px, auto) (350px)[2];
-        grid-template-rows: 100px 91px 120px minmax(500px, auto) minmax(350px, auto) minmax(230px, auto) repeat(2, 350px);
+    -ms-grid-rows: 100px 91px 120px (minmax(530px, auto))[2] minmax(230px, auto) (350px)[2];
+        grid-template-rows: 100px 91px 120px repeat(2, minmax(530px, auto)) minmax(230px, auto) repeat(2, 350px);
         grid-template-areas: "header header header" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main";
   }
 }
