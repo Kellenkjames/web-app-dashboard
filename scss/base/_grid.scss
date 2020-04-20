@@ -32,7 +32,7 @@ main {
 
     .grid {
         grid-template-columns: minmax(150px, auto) repeat(2, 2fr);
-        grid-template-rows: 100px 91px 60px minmax(375px, auto) minmax(350px, auto) minmax(230px, auto) repeat(2, 350px);
+        grid-template-rows: 100px 91px 120px minmax(500px, auto) minmax(350px, auto) minmax(230px, auto) repeat(2, 350px);
         grid-template-areas: 
             "header header header"
             "nav main main"

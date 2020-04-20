@@ -122,6 +122,7 @@
           justify-content: flex-end;
   width: 90%;
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .main__dashboard__search__icon {
@@ -156,6 +157,7 @@
           justify-content: space-between;
   border-radius: 5px;
   padding: 0 2%;
+  margin-bottom: 2rem;
 }
 
 .main__alert__desc {
@@ -695,6 +697,12 @@ h3 {
   margin: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
 .main {
   margin: 0 2rem;
 }
@@ -733,8 +741,8 @@ main {
   .grid {
     -ms-grid-columns: minmax(150px, auto) (2fr)[2];
         grid-template-columns: minmax(150px, auto) repeat(2, 2fr);
-    -ms-grid-rows: 100px 91px 60px minmax(375px, auto) minmax(350px, auto) minmax(230px, auto) (350px)[2];
-        grid-template-rows: 100px 91px 60px minmax(375px, auto) minmax(350px, auto) minmax(230px, auto) repeat(2, 350px);
+    -ms-grid-rows: 100px 91px 120px minmax(500px, auto) minmax(350px, auto) minmax(230px, auto) (350px)[2];
+        grid-template-rows: 100px 91px 120px minmax(500px, auto) minmax(350px, auto) minmax(230px, auto) repeat(2, 350px);
         grid-template-areas: "header header header" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main";
   }
 }
