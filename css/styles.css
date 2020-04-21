@@ -262,8 +262,10 @@
 
 .social__container__box {
   background-color: #f6f6da;
-  border: 1px solid #dfdfdf;
+  border: 1px solid #d1d1d1;
   border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 10px 0 #666666;
+          box-shadow: 5px 5px 10px 0 #666666;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,8 +276,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 31%;
-          flex: 0 0 31%;
+      -ms-flex: 0 0 31.5%;
+          flex: 0 0 31.5%;
   padding: 2.5rem;
 }
 
@@ -754,6 +756,7 @@ h3 {
   text-transform: uppercase;
   font-weight: 300;
   margin: 0;
+  margin-bottom: 1.5rem;
 }
 
 img {
@@ -800,8 +803,8 @@ main {
   .grid {
     -ms-grid-columns: minmax(150px, auto) (2fr)[2];
         grid-template-columns: minmax(150px, auto) repeat(2, 2fr);
-    -ms-grid-rows: 100px 91px 120px (minmax(530px, auto))[2] minmax(300px, auto) (350px)[2];
-        grid-template-rows: 100px 91px 120px repeat(2, minmax(530px, auto)) minmax(300px, auto) repeat(2, 350px);
+    -ms-grid-rows: 100px 91px 120px (minmax(530px, auto))[2] minmax(400px, auto) (350px)[2];
+        grid-template-rows: 100px 91px 120px repeat(2, minmax(530px, auto)) minmax(400px, auto) repeat(2, 350px);
         grid-template-areas: "header header header" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main";
   }
 }

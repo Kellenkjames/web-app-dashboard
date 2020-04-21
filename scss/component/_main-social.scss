@@ -9,12 +9,13 @@
         
         &__box {
             background-color: $color-bg-primary;
-            border: 1px solid #dfdfdf;
+            border: 1px solid $color-border;
             border-radius: 10px;
+            box-shadow: 5px 5px 10px 0 $color-text-dark;
             display: flex;
             align-items: center;
             justify-content: center;
-            flex: 0 0 31%;
+            flex: 0 0 31.5%;
             padding: 2.5rem;
         }
         
