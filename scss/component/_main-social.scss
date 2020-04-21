@@ -3,10 +3,57 @@
 /* ============================================= */
 
 .social {
-
+    
     &__container {
         @include flex-standard; 
+        
+        &__box {
+            background-color: $color-bg-primary;
+            border: 1px solid #dfdfdf;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 31%;
+            padding: 2.5rem;
+        }
+        
+        &__img {
+            background-color: $color-primary;
+            padding: 1.3rem;
+            margin-right: 1rem;
+            border-radius: 50%;
+            
+            
+            &__svg {
+                display: block;
+                height: 3rem;
+                color: $color-text-light;
+                fill: currentColor;
+                height: 2.5rem;
+                width: 2.5rem;
+            }
+            
+        }
+        
+        &__text {
+            line-height: 1;
+            
+            strong {
+                color: $color-primary;
+                font-size: 1.5rem;
+            }
+            
+            p {
+                margin: 0;
+                font-size: 3rem;
+                font-weight: $font-weight-light;
+            }
+        }
+        
     }
-
-
+    
+    
+    
+    
 }

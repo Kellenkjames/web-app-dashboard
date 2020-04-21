@@ -112,7 +112,7 @@
 .main__dashboard__search {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #fbfbfb;
+  background-color: #f6f6da;
   border: 1px solid #dfdfdf;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,11 +238,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .traffic__container__half {
-  width: 50%;
+  width: 47%;
 }
 
 /* ============================================= */
@@ -258,6 +258,56 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.social__container__box {
+  background-color: #f6f6da;
+  border: 1px solid #dfdfdf;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 31%;
+          flex: 0 0 31%;
+  padding: 2.5rem;
+}
+
+.social__container__img {
+  background-color: #7377bf;
+  padding: 1.3rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+.social__container__img__svg {
+  display: block;
+  height: 3rem;
+  color: #FFFFFF;
+  fill: currentColor;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.social__container__text {
+  line-height: 1;
+}
+
+.social__container__text strong {
+  color: #7377bf;
+  font-size: 1.5rem;
+}
+
+.social__container__text p {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 300;
 }
 
 /* ============================================= */
@@ -750,8 +800,8 @@ main {
   .grid {
     -ms-grid-columns: minmax(150px, auto) (2fr)[2];
         grid-template-columns: minmax(150px, auto) repeat(2, 2fr);
-    -ms-grid-rows: 100px 91px 120px (minmax(530px, auto))[2] minmax(230px, auto) (350px)[2];
-        grid-template-rows: 100px 91px 120px repeat(2, minmax(530px, auto)) minmax(230px, auto) repeat(2, 350px);
+    -ms-grid-rows: 100px 91px 120px (minmax(530px, auto))[2] minmax(300px, auto) (350px)[2];
+        grid-template-rows: 100px 91px 120px repeat(2, minmax(530px, auto)) minmax(300px, auto) repeat(2, 350px);
         grid-template-areas: "header header header" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main";
   }
 }
