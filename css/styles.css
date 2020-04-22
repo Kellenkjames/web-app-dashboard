@@ -112,7 +112,7 @@
 .main__dashboard__search {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #f6f6da;
+  background-color: #fbfbfb;
   border: 1px solid #dfdfdf;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,7 +265,7 @@
 }
 
 .social__container__box {
-  background-color: #f6f6da;
+  background-color: #fbfbfb;
   border: 1px solid #d1d1d1;
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px 5px #666666;
@@ -336,7 +336,7 @@
 }
 
 .members {
-  width: 45%;
+  width: 47%;
 }
 
 .members__container {
@@ -365,7 +365,7 @@
 /* ============================================= */
 /*              Main Messaging                   */
 /* ============================================= */
-_.message-wrapper {
+.message-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,7 +380,7 @@ _.message-wrapper {
           align-items: flex-start;
 }
 
-.message__container {
+.message {
   width: 47%;
 }
 
@@ -388,7 +388,7 @@ _.message-wrapper {
   display: block;
   width: 100%;
   padding: 1rem;
-  background-color: #f6f6da;
+  background-color: #fbfbfb;
   border: 1px solid #d1d1d1;
   border-radius: 5px;
   margin-bottom: 2rem;
@@ -399,7 +399,7 @@ _.message-wrapper {
   width: 100%;
   min-height: 10rem;
   padding: 2rem 3%;
-  background-color: #f6f6da;
+  background-color: #fbfbfb;
   border: 1px solid #d1d1d1;
   margin-bottom: 2rem;
   border-radius: 5px;
@@ -414,6 +414,55 @@ _.message-wrapper {
   padding: 1rem;
   text-transform: uppercase;
   border-radius: 5px;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+}
+
+.message__container__button:hover {
+  background-color: #b2b2b2;
+}
+
+.settings {
+  width: 47%;
+}
+
+.settings__form {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #fbfbfb;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.settings__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.settings__buttons__primary {
+  display: block;
+  border-radius: 5px;
+  width: 48%;
+  background-color: #7377bf;
+  color: #FFFFFF;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.settings__buttons__disabled {
+  display: block;
+  border-radius: 5px;
+  width: 48%;
+  background-color: #b2b2b2;
+  color: #FFFFFF;
+  padding: 1rem;
+  text-transform: uppercase;
 }
 
 /* ============================================= */

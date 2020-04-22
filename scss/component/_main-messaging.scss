@@ -2,17 +2,18 @@
 /*              Main Messaging                   */
 /* ============================================= */
 
-_.message-wrapper {
+.message-wrapper {
     @include flex-standard;
     align-items: flex-start;
 }
 
 
 .message {
-
+    width: 47%;
+    
     &__container {
-        width: 47%;
-
+        
+        
         &__input {
             display: block;
             width: 100%;
@@ -22,7 +23,7 @@ _.message-wrapper {
             border-radius: 5px;
             margin-bottom: 2rem;
         }
-
+        
         &__textarea {
             display: block;
             width: 100%;
@@ -33,7 +34,7 @@ _.message-wrapper {
             margin-bottom: 2rem;
             border-radius: 5px;
         }
-
+        
         &__button {
             display: block;
             text-align: center;
@@ -43,10 +44,54 @@ _.message-wrapper {
             padding: 1rem;
             text-transform: uppercase;
             border-radius: 5px;
+            transition: background-color .3s ease;
+            
+            &:hover {
+                background-color: $color-btn-v3;
+            }
         }
     }
+        
+}
 
+.settings {
+    width: 47%;
 
+    &__form {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        background-color: $color-bg-primary;
+        border: 1px solid $color-border;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        
+
+        &__primary {
+            display: block;
+            border-radius: 5px;
+            width: 48%;
+            background-color: $color-primary;
+            color: $color-text-light;
+            padding: 1rem;
+            text-transform: uppercase;
+        }
+
+        &__disabled {
+            display: block;
+            border-radius: 5px;
+            width: 48%;
+            background-color: $color-btn-v3;
+            color: $color-text-light;
+            padding: 1rem;
+            text-transform: uppercase;
+        }
+    }
 
 
 }
