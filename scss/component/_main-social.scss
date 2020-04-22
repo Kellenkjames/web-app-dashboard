@@ -3,6 +3,7 @@
 /* ============================================= */
 
 .social {
+    margin-bottom: 4rem;
     
     &__container {
         @include flex-standard; 
@@ -11,7 +12,7 @@
             background-color: $color-bg-primary;
             border: 1px solid $color-border;
             border-radius: 10px;
-            box-shadow: 5px 5px 10px 0 $color-text-dark;
+            box-shadow: 2px 2px 5px $color-text-dark;
             display: flex;
             align-items: center;
             justify-content: center;

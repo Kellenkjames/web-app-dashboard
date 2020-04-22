@@ -248,6 +248,10 @@
 /* ============================================= */
 /*              Social Stats                     */
 /* ============================================= */
+.social {
+  margin-bottom: 4rem;
+}
+
 .social__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,8 +268,8 @@
   background-color: #f6f6da;
   border: 1px solid #d1d1d1;
   border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 10px 0 #666666;
-          box-shadow: 5px 5px 10px 0 #666666;
+  -webkit-box-shadow: 2px 2px 5px #666666;
+          box-shadow: 2px 2px 5px #666666;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,6 +314,106 @@
   margin: 0;
   font-size: 3rem;
   font-weight: 300;
+}
+
+/* ============================================= */
+/*              Main Members                     */
+/* ============================================= */
+.members-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 4rem;
+}
+
+.members {
+  width: 45%;
+}
+
+.members__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.members__container:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.members__container__img {
+  width: 4rem;
+  border-radius: 50%;
+  margin-right: 1.2rem;
+}
+
+.members__container__date {
+  margin-left: auto;
+}
+
+/* ============================================= */
+/*              Main Messaging                   */
+/* ============================================= */
+_.message-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.message__container {
+  width: 47%;
+}
+
+.message__container__input {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #f6f6da;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.message__container__textarea {
+  display: block;
+  width: 100%;
+  min-height: 10rem;
+  padding: 2rem 3%;
+  background-color: #f6f6da;
+  border: 1px solid #d1d1d1;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+
+.message__container__button {
+  display: block;
+  text-align: center;
+  width: 100%;
+  background-color: #7377bf;
+  color: #FFFFFF;
+  padding: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
 }
 
 /* ============================================= */
@@ -748,7 +852,7 @@ ul {
   margin: 0;
 }
 
-h2 {
+h2, p {
   margin: 0;
 }
 
@@ -803,8 +907,8 @@ main {
   .grid {
     -ms-grid-columns: minmax(150px, auto) (2fr)[2];
         grid-template-columns: minmax(150px, auto) repeat(2, 2fr);
-    -ms-grid-rows: 100px 91px 120px (minmax(530px, auto))[2] minmax(400px, auto) (350px)[2];
-        grid-template-rows: 100px 91px 120px repeat(2, minmax(530px, auto)) minmax(400px, auto) repeat(2, 350px);
+    -ms-grid-rows: 100px 91px 120px (minmax(530px, auto))[2] minmax(400px, auto) 420px 550px;
+        grid-template-rows: 100px 91px 120px repeat(2, minmax(530px, auto)) minmax(400px, auto) 420px 550px;
         grid-template-areas: "header header header" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main" "nav main main";
   }
 }

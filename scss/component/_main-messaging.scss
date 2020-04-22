@@ -1,0 +1,52 @@
+/* ============================================= */
+/*              Main Messaging                   */
+/* ============================================= */
+
+_.message-wrapper {
+    @include flex-standard;
+    align-items: flex-start;
+}
+
+
+.message {
+
+    &__container {
+        width: 47%;
+
+        &__input {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background-color: $color-bg-primary;
+            border: 1px solid $color-border;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+        }
+
+        &__textarea {
+            display: block;
+            width: 100%;
+            min-height: 10rem;
+            padding: 2rem 3%;
+            background-color: $color-bg-primary;
+            border: 1px solid $color-border;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+        }
+
+        &__button {
+            display: block;
+            text-align: center;
+            width: 100%;
+            background-color: $color-primary;
+            color: $color-text-light;
+            padding: 1rem;
+            text-transform: uppercase;
+            border-radius: 5px;
+        }
+    }
+
+
+
+
+}
