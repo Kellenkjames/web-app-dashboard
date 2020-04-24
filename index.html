@@ -295,10 +295,24 @@
 				<section class="settings">
 					<h3>Settings</h3>
 					<!-- custom CSS toggle code-->
-					<label class="settings__switch">
-						<input type="checkbox" />
-						<div class="settings__switch__btn"></div>
-					</label>
+					<div class="settings__container">
+						<label class="settings__switch">
+							Send Email Notifications
+							<input type="checkbox" />
+							<div class="settings__switch__btn">
+								<span class="settings__switch__type">ON</span>
+							</div>
+						</label>
+					</div>
+					<div class="settings__container">
+						<label class="settings__switch">
+							Set Profile to Public
+							<input type="checkbox" />
+							<div class="settings__switch__btn">
+								<span class="settings__switch__type">ON</span>
+							</div>
+						</label>
+					</div>
 					<!-- custom CSS toggle code-->
 					<select class="settings__form" id="timezone">
 						<option disabled selected>Select a Timezone</option>

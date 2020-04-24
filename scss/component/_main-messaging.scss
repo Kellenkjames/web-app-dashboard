@@ -52,55 +52,28 @@
             }
         }
     }
-        
+    
 }
 
 .settings {
     width: 47%;
 
-    &__form {
-        display: block;
-        width: 100%;
-        padding: 1rem;
-        background-color: $color-bg-primary;
-        border: 1px solid $color-border;
-        border-radius: 5px;
-        margin-bottom: 2rem;
+    &__container:not(:last-child) {
+        margin-bottom: 3rem;
     }
 
-    &__buttons {
-        display: flex;
-        justify-content: space-between;
-        
-
-        &__primary {
-            display: block;
-            border-radius: 5px;
-            width: 48%;
-            background-color: $color-primary;
-            color: $color-text-light;
-            padding: 1rem;
-            text-transform: uppercase;
-            cursor: pointer;
-        }
-
-        &__disabled {
-            display: block;
-            border-radius: 5px;
-            width: 48%;
-            background-color: $color-btn-v3;
-            color: $color-text-light;
-            padding: 1rem;
-            text-transform: uppercase;
-            cursor: pointer;
-        }
+    &__container + &__container {
+        margin-bottom: 4.5rem;
     }
-
+ 
     &__switch {
-        opacity: 0;
-
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        
         &__btn {
-            width: 80px;
+            width: 110px;
             height: 40px;
             background: #e5e5e5;
             position: relative;
@@ -118,15 +91,74 @@
                 cursor: pointer;
                 border-radius: 50%;
                 transition: all 150ms ease-out;
-                box-shadow: 0 8px 6px 2px -4px rgba(0,0,0.25);
+                box-shadow: 0 8px 6px 2px -4px rgba(0,0,0,.25);
             }
         }
-        input[type=checkbox]:checked + &__btn:before {
-            left: 42px;
+        
+        input[type=checkbox] {
+            display: none;
         }
+        
+        input[type=checkbox]:checked + &__btn:before {
+            left: 70px;
+        }
+        
         input[type=checkbox]:checked + &__btn {
-            background: rgb(100,255,100);
+            background: $color-primary;
+        }
+
+        input[type=checkbox]:checked + &__btn > &__type {
+            position: relative;
+            opacity: 1;
+            top: 20%;
+            left: 15%;
+
+        }
+
+        &__type {
+            color: $color-text-light;
+            opacity: 0;
+        }
+
+
+    }
+    
+    &__form {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        background-color: $color-bg-primary;
+        border: 1px solid $color-border;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+    }
+    
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        
+        
+        &__primary {
+            display: block;
+            border-radius: 5px;
+            width: 48%;
+            background-color: $color-primary;
+            color: $color-text-light;
+            padding: 1rem;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        
+        &__disabled {
+            display: block;
+            border-radius: 5px;
+            width: 48%;
+            background-color: $color-btn-v3;
+            color: $color-text-light;
+            padding: 1rem;
+            text-transform: uppercase;
+            cursor: pointer;
         }
     }
-
+    
 }
