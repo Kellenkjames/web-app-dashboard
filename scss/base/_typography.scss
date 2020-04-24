@@ -44,3 +44,10 @@ img {
     width: 100%;
     max-width: 100%;
 }
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
