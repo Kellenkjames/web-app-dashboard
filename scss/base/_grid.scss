@@ -31,17 +31,17 @@ main {
 @media screen and (min-width: 768px) {
 
     .grid {
-        grid-template-columns: minmax(150px, auto) repeat(2, 2fr);
-        grid-template-rows: 100px 91px 120px repeat(2, minmax(530px, auto)) minmax(400px, auto) 420px 550px;
+        grid-template-columns: minmax(150px, auto) 1fr;
+        grid-template-rows: 100px 91px 90px repeat(2, minmax(530px, auto)) minmax(320px, auto) 500px 550px;
         grid-template-areas: 
-            "header header header"
-            "nav main main"
-            "nav main main"
-            "nav main main"
-            "nav main main"
-            "nav main main"
-            "nav main main"
-            "nav main main";
+            "header header"
+            "nav main"
+            "nav main"
+            "nav main"
+            "nav main"
+            "nav main"
+            "nav main"
+            "nav main";
     }
 
 }
