@@ -7,6 +7,7 @@
     align-items: flex-start;
 }
 
+// MESSAGE [HALF]
 
 .message {
     width: 47%;
@@ -48,24 +49,28 @@
             cursor: pointer;
             
             &:hover {
-                background-color: $color-btn-v3;
+                background-color: $color-btn-v2;
             }
         }
+        
     }
+    
     
 }
 
+// SETTINGS [HALF]
+
 .settings {
     width: 47%;
-
+    
     &__container:not(:last-child) {
         margin-bottom: 3rem;
     }
-
+    
     &__container + &__container {
         margin-bottom: 4.5rem;
     }
- 
+    
     &__switch {
         display: flex;
         align-items: center;
@@ -106,24 +111,40 @@
         input[type=checkbox]:checked + &__btn {
             background: $color-primary;
         }
-
+        
         input[type=checkbox]:checked + &__btn > &__type {
             position: relative;
             opacity: 1;
             top: 20%;
             left: 15%;
-
         }
-
+        
         &__type {
             color: $color-text-light;
             opacity: 0;
         }
-
-
+        
+        
     }
+
+    &__wrapper {
+        display: flex;
+        position: relative;
+
+        &__arrow {
+            display: block;
+            height: 2rem;
+            width: 2rem;
+            position: absolute;
+            bottom: calc(100% - 2.8rem);
+            left: calc(100% - 3.5rem);
+            pointer-events: none;
+        }
+    }
+
+
     
-    &__form {
+    &__timezone {
         display: block;
         width: 100%;
         padding: 1rem;
@@ -131,14 +152,17 @@
         border: 1px solid $color-border;
         border-radius: 5px;
         margin-bottom: 2rem;
-    }
+        position: relative;
     
+    }
+
     &__buttons {
         display: flex;
         justify-content: space-between;
+        transition: background-color .3s ease;
         
         
-        &__primary {
+        &--primary {
             display: block;
             border-radius: 5px;
             width: 48%;
@@ -147,9 +171,13 @@
             padding: 1rem;
             text-transform: uppercase;
             cursor: pointer;
+
+            &:hover {
+                background-color: $color-btn-v2;
+            }
         }
         
-        &__disabled {
+        &--disabled {
             display: block;
             border-radius: 5px;
             width: 48%;

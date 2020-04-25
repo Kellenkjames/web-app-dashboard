@@ -29,7 +29,8 @@
 						<g>
 							<path class="st0" d="M24,18v-8c0-5.5-4.5-10-10-10S4,4.5,4,10v8l-4,8h9.1c0.5,2.3,2.5,4,4.9,4s4.4-1.7,4.9-4H28L24,18z M14,28 c-1.3,0-2.4-0.8-2.8-2h5.6C16.4,27.2,15.3,28,14,28z M3,24l3-6v-8c0-4.4,3.6-8,8-8s8,3.6,8,8v8l3,6H3z"></path>
 						</g>
-					</g></svg> <span class="header__container__alerts__accent"></span>
+					</g></svg> 
+					<span class="header__container__alerts__accent"></span>
 					<div class="header__container__notifications">
 						<span></span> <span></span> <span></span>
 					</div>
@@ -96,7 +97,9 @@
 			<!-- Dashboard Row-->
 			<div class="main__dashboard">
 				<h2 class="main__dashboard__headline">Dashboard</h2>
-				<div class="main__dashboard__search"><input id="YourAppSearch" placeholder="Search" type="search"> <img alt="search icon" class="main__dashboard__search__icon" src="https://img.icons8.com/pastel-glyph/64/000000/search--v2.png"></div>
+				<div class="main__dashboard__search"><input id="YourAppSearch" placeholder="Search" type="search"> 
+					<img alt="search icon" class="main__dashboard__search__icon" src="https://img.icons8.com/pastel-glyph/64/000000/search--v2.png">
+				</div>
 			</div><!-- Alert Bar-->
 			<div class="main__alert">
 				<p class="main__alert__desc"><strong>Alert</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odio, exercitationem non facere quaerat fugit deleniti.</p><svg class="main__alert__icon" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
@@ -121,8 +124,8 @@
 					<!-- <canvas id="traffic-chart"></canvas> -->
 				<!-- </div>Bar Graph -->
 			</section>
-			<div class="traffic__container">
-				<section class="traffic__container__half">
+			<div class="daily">
+				<section class="daily__half">
 					<h3>Daily Traffic</h3>
 					<!-- Placeholder Image (will be removed later) -->
 					<img style="width: 40rem;" src="images/bar-graph-placeholder.jpg" alt="bar graph" />
@@ -132,7 +135,7 @@
 						<!-- <canvas id="daily-chart"></canvas> -->
 					<!-- </div> -->
 				</section><!-- Doughnut Charts -->
-				<section class="traffic__container__half">
+				<section class="daily__half">
 					<h3>Mobile Users</h3>
 					<!-- Placeholder Image (will be removed later) -->
 					<img style="width: 35rem;" src="images/pie-chart-placeholder.jpg" alt="pie chart" />
@@ -254,7 +257,7 @@
 							<p>Victoria Chambers commented on YourApp's SEO Tips</p>
 							<p>4 hours ago</p>
 						</div>
-						<p class="members__container__date">04/20/20</p>
+						<img class="members__container__arrow" alt="right arrow" src="https://img.icons8.com/ios-filled/50/000000/forward.png"/>
 					</div>
 					<div class="members__container">
 						<img class="members__container__img" src="images/member-2.jpg" alt="member-2">
@@ -262,7 +265,7 @@
 							<p>Dale Byrd like the post Facebook's Changes for 2020</p>
 							<p>5 hours ago</p>
 						</div>
-						<p class="members__container__date">04/20/20</p>
+						<img class="members__container__arrow" alt="right arrow" src="https://img.icons8.com/ios-filled/50/000000/forward.png"/>
 					</div>
 					<div class="members__container">
 						<img class="members__container__img" src="images/member-3.jpg" alt="member-3">
@@ -270,7 +273,7 @@
 							<p>Dawn Wood commented on Facebook's Change for 2020</p>
 							<p>5 hours ago</p>
 						</div>
-						<p class="members__container__date">04/20/20</p>
+						<img class="members__container__arrow" alt="right arrow" src="https://img.icons8.com/ios-filled/50/000000/forward.png"/>
 					</div>
 					<div class="members__container">
 						<img class="members__container__img" src="images/member-4.jpg" alt="member-4">
@@ -278,7 +281,7 @@
 							<p>Dan Oliver posted YourApp's SEO Tips</p>
 							<p>1 day ago</p>
 						</div>
-						<p class="members__container__date">04/20/20</p>
+						<img class="members__container__arrow" alt="right arrow" src="https://img.icons8.com/ios-filled/50/000000/forward.png"/>
 					</div>
 				</section>
 			</div>
@@ -287,8 +290,8 @@
 				<section class="message">
 					<h3>Message User</h3>
 					<form class="message__container">
-						<input type="text" placeholder="Search for user" class="message__container__input" id="userField">
-						<textarea placeholder="Message for user" class="message__container__textarea" id="messageField"></textarea>
+						<input type="text" placeholder="Search for User" class="message__container__input" id="userField">
+						<textarea placeholder="Message for User" class="message__container__textarea" id="messageField"></textarea>
 						<button class="message__container__button" id="send">Send</button>
 					</form>
 				</section>
@@ -314,14 +317,17 @@
 						</label>
 					</div>
 					<!-- custom CSS toggle code-->
-					<select class="settings__form" id="timezone">
-						<option disabled selected>Select a Timezone</option>
-						<option>Eastern</option>
-						<option>Pacific</option>
-					</select>
+					<div class="settings__wrapper">
+						<select class="settings__timezone" id="timezone">
+							<option disabled selected>Select a Timezone</option>
+							<option>Eastern</option>
+							<option>Pacific</option>
+						</select>
+						<img class="settings__wrapper__arrow" alt="arrow down" src="https://img.icons8.com/ios/50/000000/expand-arrow--v1.png"/>
+					</div>
 					<div class="settings__buttons">
-						<button class="settings__buttons__primary" id="save">Save</button>
-						<button class="settings__buttons__disabled" id="cancel">Cancel</button>
+						<button class="settings__buttons settings__buttons--primary" id="save">Save</button>
+						<button class="settings__buttons settings__buttons--disabled" id="cancel">Cancel</button>
 					</div>
 				</section>
 			</div>

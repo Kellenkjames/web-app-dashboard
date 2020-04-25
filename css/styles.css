@@ -162,6 +162,7 @@
 
 .main__alert__desc {
   color: #FFFFFF;
+  padding: 1rem;
 }
 
 .main__alert__icon {
@@ -231,7 +232,10 @@
   margin-left: 2rem;
 }
 
-.traffic__container {
+/* ============================================= */
+/*              Daily Users                      */
+/* ============================================= */
+.daily {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,7 +245,7 @@
   margin-bottom: 4rem;
 }
 
-.traffic__container__half {
+.daily__half {
   width: 47%;
 }
 
@@ -360,6 +364,13 @@
   margin-left: auto;
 }
 
+.members__container__arrow {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  margin-left: auto;
+}
+
 /* ============================================= */
 /*              Main Messaging                   */
 /* ============================================= */
@@ -418,7 +429,7 @@
 }
 
 .message__container__button:hover {
-  background-color: #b2b2b2;
+  background-color: #81c98f;
 }
 
 .settings {
@@ -497,7 +508,24 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
   opacity: 0;
 }
 
-.settings__form {
+.settings__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.settings__wrapper__arrow {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  bottom: calc(100% - 2.8rem);
+  left: calc(100% - 3.5rem);
+  pointer-events: none;
+}
+
+.settings__timezone {
   display: block;
   width: 100%;
   padding: 1rem;
@@ -505,6 +533,7 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
   border: 1px solid #d1d1d1;
   border-radius: 5px;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .settings__buttons {
@@ -514,9 +543,11 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
 }
 
-.settings__buttons__primary {
+.settings__buttons--primary {
   display: block;
   border-radius: 5px;
   width: 48%;
@@ -527,7 +558,11 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
   cursor: pointer;
 }
 
-.settings__buttons__disabled {
+.settings__buttons--primary:hover {
+  background-color: #81c98f;
+}
+
+.settings__buttons--disabled {
   display: block;
   border-radius: 5px;
   width: 48%;
@@ -1006,29 +1041,31 @@ select {
   height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: (150px)[2] minmax(auto-fit, 1fr);
-      grid-template-rows: repeat(2, 150px) minmax(auto-fit, 1fr);
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
       grid-template-areas: "header" "nav" "main";
 }
 
-header {
+.header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
 }
 
-nav {
+.nav {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: nav;
 }
 
-main {
+.main {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: main;
+  display: -ms-grid;
+  display: grid;
 }
 
 /* Responsive */
@@ -1036,9 +1073,11 @@ main {
   .grid {
     -ms-grid-columns: minmax(150px, auto) 1fr;
         grid-template-columns: minmax(150px, auto) 1fr;
-    -ms-grid-rows: 100px 91px 90px (minmax(530px, auto))[2] minmax(320px, auto) 500px 550px;
-        grid-template-rows: 100px 91px 90px repeat(2, minmax(530px, auto)) minmax(320px, auto) 500px 550px;
         grid-template-areas: "header header" "nav main" "nav main" "nav main" "nav main" "nav main" "nav main" "nav main";
+  }
+  .main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=styles.css.map */

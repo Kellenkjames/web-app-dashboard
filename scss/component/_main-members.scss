@@ -31,5 +31,17 @@
         
     }
 
+    &__container {
+
+        &__arrow {
+            display: block;
+            height: 2rem;
+            width: 2rem;
+            margin-left: auto;
+        }
+
+
+    }
+
     
 }
