@@ -4,7 +4,6 @@
 
 .traffic {
     border-bottom: 1px solid $color-border;
-    margin-bottom: 2rem;
     @include main-gutter;
     
     &__header {

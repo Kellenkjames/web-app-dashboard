@@ -2,8 +2,23 @@
 /*              Main Members                     */
 /* ============================================= */
 
+.members {
+    border-right: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+}
+
+.activity {
+    border-bottom: 1px solid $color-border;
+}
+
 .members,
 .activity {
+    @include main-gutter;
+    padding-bottom: 2rem;
+
+    h3 {
+        margin-bottom: 1.5rem;
+    }
     
     &__container {
         display: flex;
@@ -36,6 +51,5 @@
         
         
     }
-    
-    
+        
 }
