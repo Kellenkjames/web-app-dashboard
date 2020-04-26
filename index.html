@@ -13,7 +13,7 @@
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div class="grid">
+	<div class="grid-container">
 		<!-- Grid Container for Header, Nav, Main -->
 		<header class="header">
 			<!-- Grid Item and Flex Container-->
@@ -94,17 +94,21 @@
 			</ul>
 		</nav>
 		<main class="main">
-			<!-- Dashboard Row-->
-			<div class="main__dashboard">
-				<h2 class="main__dashboard__headline">Dashboard</h2>
-				<div class="main__dashboard__search"><input id="YourAppSearch" placeholder="Search" type="search"> 
-					<img alt="search icon" class="main__dashboard__search__icon" src="https://img.icons8.com/pastel-glyph/64/000000/search--v2.png">
+			<div class="dashboard-wrapper">
+				<!-- Dashboard Row-->
+				<div class="main__dashboard">
+					<h2>Dashboard</h2>
+					<div class="main__dashboard__search"><input id="YourAppSearch" placeholder="Search" type="search"> 
+						<img alt="search icon" class="main__dashboard__search__icon" src="https://img.icons8.com/pastel-glyph/64/000000/search--v2.png">
+					</div>
+				</div> 
+				<!-- Alert Bar -->
+				<div class="main__alert">
+					<p class="main__alert__desc"><strong>Alert</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odio, exercitationem non facere quaerat fugit deleniti.</p><svg class="main__alert__icon" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path></svg> <!--JS will insert here -->
 				</div>
-			</div><!-- Alert Bar-->
-			<div class="main__alert">
-				<p class="main__alert__desc"><strong>Alert</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odio, exercitationem non facere quaerat fugit deleniti.</p><svg class="main__alert__icon" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
-				<path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path></svg> <!--JS will insert here -->
-			</div><!--line graph charts -->
+			</div>
+			<!-- Traffic Widget --> 
 			<section class="traffic">
 				<div class="traffic__header">
 					<h3 class="traffic__header__title">Traffic</h3>
@@ -124,28 +128,26 @@
 					<!-- <canvas id="traffic-chart"></canvas> -->
 				<!-- </div>Bar Graph -->
 			</section>
-			<div class="daily">
-				<section class="daily__half">
-					<h3>Daily Traffic</h3>
-					<!-- Placeholder Image (will be removed later) -->
-					<img style="width: 40rem;" src="images/bar-graph-placeholder.jpg" alt="bar graph" />
+			<section class="daily">
+				<h3>Daily Traffic</h3>
+				<!-- Placeholder Image (will be removed later) -->
+				<img style="width: 40rem;" src="images/bar-graph-placeholder.jpg" alt="bar graph" />
 
-					<!-- <div class="widget-container-half"> -->
-						<!-- Element Bar Graph will attach to -->
-						<!-- <canvas id="daily-chart"></canvas> -->
-					<!-- </div> -->
-				</section><!-- Doughnut Charts -->
-				<section class="daily__half">
-					<h3>Mobile Users</h3>
-					<!-- Placeholder Image (will be removed later) -->
-					<img style="width: 35rem;" src="images/pie-chart-placeholder.jpg" alt="pie chart" />
-					
-					<!-- <div class="widget-container-half"> -->
-						<!-- Element Doughnut Graph will attach to -->
-						<!-- <canvas id="mobile-users"></canvas> -->
-					<!-- </div> -->
-				</section>
-			</div>
+				<!-- <div class="widget-container-half"> -->
+					<!-- Element Bar Graph will attach to -->
+					<!-- <canvas id="daily-chart"></canvas> -->
+				<!-- </div> -->
+			</section><!-- Doughnut Charts -->
+			<section class="mobile">
+				<h3>Mobile Users</h3>
+				<!-- Placeholder Image (will be removed later) -->
+				<img style="width: 35rem;" src="images/pie-chart-placeholder.jpg" alt="pie chart" />
+				
+				<!-- <div class="widget-container-half"> -->
+					<!-- Element Doughnut Graph will attach to -->
+					<!-- <canvas id="mobile-users"></canvas> -->
+				<!-- </div> -->
+			</section>
 			<section class="social">
 				<h3>Social Stats</h3>
 				<div class="social__container">
@@ -212,125 +214,121 @@
 					</div>
 				</div>
 			</section>
-			<!--New Members and Recent Activity -->	
-			<div class="members-wrapper">
-				<section class="members">
-					<h3>New Members</h3>
-					<div class="members__container">
-						<img class="members__container__img" src="images/member-1.jpg" alt="member-1">
-						<div class="members__text">
-							<p>Victoria Chambers</p>
-							<a href="#">victoria.chambers80@example.com</a>
+			<!--New Members and members Activity -->
+			<section class="members">
+				<h3>New Members</h3>
+				<div class="members__container">
+					<img class="members__container__img" src="images/member-1.jpg" alt="member-1">
+					<div class="members__text">
+						<p>Victoria Chambers</p>
+						<a href="#">victoria.chambers80@example.com</a>
+					</div>
+					<p class="members__container__date">04/20/20</p>
+				</div>
+				<div class="members__container">
+					<img class="members__container__img" src="images/member-2.jpg" alt="member-2">
+					<div class="members__text">
+						<p>Dale Byrd</p>
+						<a href="#">dale.byrd52@example.com</a>
+					</div>
+					<p class="members__container__date">04/20/20</p>
+				</div>
+				<div class="members__container">
+					<img class="members__container__img" src="images/member-3.jpg" alt="member-3">
+					<div class="members__text">
+						<p>Dawn Wood</p>
+						<a href="#">dawn.wood16@example.com</a>
+					</div>
+					<p class="members__container__date">04/20/20</p>
+				</div>
+				<div class="members__container">
+					<img class="members__container__img" src="images/member-4.jpg" alt="member-4">
+					<div class="members__text">
+						<p>Dan Oliver</p>
+						<a href="#">dan.oliver82@example.com</a>
+					</div>
+					<p class="members__container__date">04/20/20</p>
+				</div>
+			</section>
+			<section class="activity">
+				<h3>Recent Activity</h3>
+				<div class="activity__container">
+					<img class="activity__container__img" src="images/member-1.jpg" alt="member-1">
+					<div class="activity__text">
+						<p>Victoria Chambers commented on YourApp's SEO Tips</p>
+						<p>4 hours ago</p>
+					</div>
+					<img class="activity__container__arrow" alt="right arrow" src="https://img.icons8.com/ios-filled/50/000000/forward.png"/>
+				</div>
+				<div class="activity__container">
+					<img class="activity__container__img" src="images/member-2.jpg" alt="member-2">
+					<div class="activity__text">
+						<p>Dale Byrd like the post Facebook's Changes for 2020</p>
+						<p>5 hours ago</p>
+					</div>
+					<img class="activity__container__arrow" alt="right arrow" src="https://img.icons8.com/ios-filled/50/000000/forward.png"/>
+				</div>
+				<div class="activity__container">
+					<img class="activity__container__img" src="images/member-3.jpg" alt="member-3">
+					<div class="activity__text">
+						<p>Dawn Wood commented on Facebook's Change for 2020</p>
+						<p>5 hours ago</p>
+					</div>
+					<img class="activity__container__arrow" alt="right arrow" src="https://img.icons8.com/ios-filled/50/000000/forward.png"/>
+				</div>
+				<div class="activity__container">
+					<img class="activity__container__img" src="images/member-4.jpg" alt="member-4">
+					<div class="activity__text">
+						<p>Dan Oliver posted YourApp's SEO Tips</p>
+						<p>1 day ago</p>
+					</div>
+					<img class="activity__container__arrow" alt="right arrow" src="https://img.icons8.com/ios-filled/50/000000/forward.png"/>
+				</div>
+			</section>
+			<!-- Messaging Widget -->
+			<section class="message">
+				<h3>Message User</h3>
+				<form class="message__container">
+					<input type="text" placeholder="Search for User" class="message__container__input" id="userField">
+					<textarea placeholder="Message for User" class="message__container__textarea" id="messageField"></textarea>
+					<button class="message__container__button" id="send">Send</button>
+				</form>
+			</section>
+			<section class="settings">
+				<h3>Settings</h3>
+				<!-- custom CSS toggle code-->
+				<div class="settings__container">
+					<label class="settings__switch">
+						Send Email Notifications
+						<input type="checkbox" />
+						<div class="settings__switch__btn">
+							<span class="settings__switch__type">ON</span>
 						</div>
-						<p class="members__container__date">04/20/20</p>
-					</div>
-					<div class="members__container">
-						<img class="members__container__img" src="images/member-2.jpg" alt="member-2">
-						<div class="members__text">
-							<p>Dale Byrd</p>
-							<a href="#">dale.byrd52@example.com</a>
+					</label>
+				</div>
+				<div class="settings__container">
+					<label class="settings__switch">
+						Set Profile to Public
+						<input type="checkbox" />
+						<div class="settings__switch__btn">
+							<span class="settings__switch__type">ON</span>
 						</div>
-						<p class="members__container__date">04/20/20</p>
-					</div>
-					<div class="members__container">
-						<img class="members__container__img" src="images/member-3.jpg" alt="member-3">
-						<div class="members__text">
-							<p>Dawn Wood</p>
-							<a href="#">dawn.wood16@example.com</a>
-						</div>
-						<p class="members__container__date">04/20/20</p>
-					</div>
-					<div class="members__container">
-						<img class="members__container__img" src="images/member-4.jpg" alt="member-4">
-						<div class="members__text">
-							<p>Dan Oliver</p>
-							<a href="#">dan.oliver82@example.com</a>
-						</div>
-						<p class="members__container__date">04/20/20</p>
-					</div>
-				</section>
-				<section class="recent">
-					<h3>Recent Activity</h3>
-					<div class="recent__container">
-						<img class="recent__container__img" src="images/member-1.jpg" alt="member-1">
-						<div class="recent__text">
-							<p>Victoria Chambers commented on YourApp's SEO Tips</p>
-							<p>4 hours ago</p>
-						</div>
-						<img class="recent__container__arrow" alt="right arrow" src="https://img.icons8.com/ios-filled/50/000000/forward.png"/>
-					</div>
-					<div class="recent__container">
-						<img class="recent__container__img" src="images/member-2.jpg" alt="member-2">
-						<div class="recent__text">
-							<p>Dale Byrd like the post Facebook's Changes for 2020</p>
-							<p>5 hours ago</p>
-						</div>
-						<img class="recent__container__arrow" alt="right arrow" src="https://img.icons8.com/ios-filled/50/000000/forward.png"/>
-					</div>
-					<div class="recent__container">
-						<img class="recent__container__img" src="images/member-3.jpg" alt="member-3">
-						<div class="recent__text">
-							<p>Dawn Wood commented on Facebook's Change for 2020</p>
-							<p>5 hours ago</p>
-						</div>
-						<img class="recent__container__arrow" alt="right arrow" src="https://img.icons8.com/ios-filled/50/000000/forward.png"/>
-					</div>
-					<div class="recent__container">
-						<img class="recent__container__img" src="images/member-4.jpg" alt="member-4">
-						<div class="recent__text">
-							<p>Dan Oliver posted YourApp's SEO Tips</p>
-							<p>1 day ago</p>
-						</div>
-						<img class="recent__container__arrow" alt="right arrow" src="https://img.icons8.com/ios-filled/50/000000/forward.png"/>
-					</div>
-				</section>
-			</div>
-			<div class="message-settings-wrapper">
-				<!-- Messaging Widget -->
-				<section class="message">
-					<h3>Message User</h3>
-					<form class="message__container">
-						<input type="text" placeholder="Search for User" class="message__container__input" id="userField">
-						<textarea placeholder="Message for User" class="message__container__textarea" id="messageField"></textarea>
-						<button class="message__container__button" id="send">Send</button>
-					</form>
-				</section>
-				<section class="settings">
-					<h3>Settings</h3>
-					<!-- custom CSS toggle code-->
-					<div class="settings__container">
-						<label class="settings__switch">
-							Send Email Notifications
-							<input type="checkbox" />
-							<div class="settings__switch__btn">
-								<span class="settings__switch__type">ON</span>
-							</div>
-						</label>
-					</div>
-					<div class="settings__container">
-						<label class="settings__switch">
-							Set Profile to Public
-							<input type="checkbox" />
-							<div class="settings__switch__btn">
-								<span class="settings__switch__type">ON</span>
-							</div>
-						</label>
-					</div>
-					<!-- custom CSS toggle code-->
-					<div class="settings__wrapper">
-						<select class="settings__timezone" id="timezone">
-							<option disabled selected>Select a Timezone</option>
-							<option>Eastern</option>
-							<option>Pacific</option>
-						</select>
-						<img class="settings__wrapper__arrow" alt="arrow down" src="https://img.icons8.com/ios/50/000000/expand-arrow--v1.png"/>
-					</div>
-					<div class="settings__buttons">
-						<button class="settings__buttons settings__buttons--primary" id="save">Save</button>
-						<button class="settings__buttons settings__buttons--disabled" id="cancel">Cancel</button>
-					</div>
-				</section>
-			</div>
+					</label>
+				</div>
+				<!-- custom CSS toggle code-->
+				<div class="settings__wrapper">
+					<select class="settings__timezone" id="timezone">
+						<option disabled selected>Select a Timezone</option>
+						<option>Eastern</option>
+						<option>Pacific</option>
+					</select>
+					<img class="settings__wrapper__arrow" alt="arrow down" src="https://img.icons8.com/ios/50/000000/expand-arrow--v1.png"/>
+				</div>
+				<div class="settings__buttons">
+					<button class="settings__buttons settings__buttons--primary" id="save">Save</button>
+					<button class="settings__buttons settings__buttons--disabled" id="cancel">Cancel</button>
+				</div>
+			</section>
 		</main>
 	</div>
 </body>

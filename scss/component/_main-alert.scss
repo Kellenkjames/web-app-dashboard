@@ -6,10 +6,10 @@
 
     &__alert {
         background-color: $color-primary;
-        @include flex-standard;
         border-radius: 5px;
         padding: 0 2%;
         margin-bottom: 2rem;
+        @include flex-standard;
 
         &__desc {
             color: $color-text-light;

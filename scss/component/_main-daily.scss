@@ -3,13 +3,6 @@
 /* ============================================= */
 
 .daily {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 4rem;
-    
-    &__half {
-        width: 47%;
-    }
-    
-}
 
+    @include main-gutter;
+}

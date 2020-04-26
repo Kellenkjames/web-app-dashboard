@@ -1,18 +1,13 @@
 // GRID Layout
 
-.main {
-    margin: 0 2rem;  
-}
-
-.grid {
-    height: 100vh;
+.grid-container {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto; 
     grid-template-areas: 
-        "header"
-        "nav"
-        "main";
+    "header"
+    "nav"
+    "main";
 }
 
 .header {
@@ -25,28 +20,37 @@
 
 .main {
     grid-area: main;
-    display: grid;
 }
 
 /* Responsive */
 @media screen and (min-width: 768px) {
-
-    .grid {
+    
+    .grid-container {
         grid-template-columns: minmax(150px, auto) 1fr;
-        // grid-template-rows: 100px 91px 90px repeat(2, minmax(530px, auto)) minmax(320px, auto) 500px 600px;
         grid-template-areas: 
-            "header header"
-            "nav main"
-            "nav main"
-            "nav main"
-            "nav main"
-            "nav main"
-            "nav main"
-            "nav main";
+        "header header"
+        "nav main";
     }
-
+    
     .main {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-rows: auto; 
+        grid-template-columns: 50%;
     }
 
+    .traffic, .social, .dashboard-wrapper {
+        grid-column: 1 / span 2;
+    }
+
+
+    .daily, .members, .message {
+        grid-column: 1 / span 1;
+    }
+
+    .mobile, .activity, .settings {
+        grid-column: 2 / span 1;
+    }
+    
+    
+    
 }

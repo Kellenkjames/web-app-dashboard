@@ -2,15 +2,9 @@
 /*              Main Messaging                   */
 /* ============================================= */
 
-.message-settings-wrapper {
-    @include flex-standard;
-    align-items: flex-start;
-}
-
 // MESSAGE [HALF]
 
 .message {
-    width: 47%;
     
     &__container {
         
@@ -61,7 +55,6 @@
 // SETTINGS [HALF]
 
 .settings {
-    width: 47%;
     
     &__container:not(:last-child) {
         margin-bottom: 3rem;
