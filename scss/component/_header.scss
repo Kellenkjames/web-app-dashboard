@@ -2,10 +2,14 @@
 /*              HEADER                           */
 /* ============================================= */
 
+// These styles should be for mobile, insteade they are for tablet and above. 
+
 .header {
     background-color: $color-primary-light;
     padding: .5rem 1rem;
     @include flex-standard;
+    justify-content: center;
+    flex-wrap: wrap;
     
     * {
         color: $color-text-light;
@@ -63,4 +67,14 @@
         
     }
     
-} // end 
+} 
+
+@media screen and (min-width: 768px) {
+
+    .header {
+        justify-content: space-between;
+    
+    }
+
+}
+
