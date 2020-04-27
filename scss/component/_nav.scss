@@ -4,24 +4,17 @@
 
 .nav {
     background-color: $color-primary-dark;
+    padding: 1.3rem;
     
     &__list {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        padding-top: 3rem;
     }
 
-    &__item {
-        position: relative;
-    }
-
-    &__item:not(:last-child) {
-        margin-bottom: 3rem;
-    }
-    
     &__link {
-
+    
         &:not(.active) svg {
             opacity: .5;
         }
@@ -54,9 +47,33 @@
 
         &__svg {
             display: block;
-            height: 2.5rem;
+            height: 2rem;
             transition: .3s opacity ease-in;
         }
         
     }
+
+}
+
+// RESPONSIVE [MOBILE FIRST-APPROACH]
+
+@media screen and (min-width: 768px) {
+
+    .nav {
+
+        &__list {
+            padding-top: 3rem;
+            flex-direction: column;
+        }
+
+        &__item {
+            position: relative;
+        }
+    
+        &__item:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+
+    }
+
 }

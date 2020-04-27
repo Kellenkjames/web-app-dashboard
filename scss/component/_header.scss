@@ -14,7 +14,7 @@
     * {
         color: $color-text-light;
     }
-    
+
     &__title {
         flex: 0 0 auto;
         font-size: 1.7rem;
@@ -22,6 +22,10 @@
         &__span {
             font-weight: $font-weight-light;
         }
+    }
+
+    h2 {
+        font-size: .9rem;
     }
     
     // Alerts & Notifications
@@ -69,11 +73,16 @@
     
 } 
 
+// RESPONSIVE [MOBILE FIRST-APPROACH]
+
 @media screen and (min-width: 768px) {
 
     .header {
         justify-content: space-between;
     
+        h2 {
+            font-size: 1.3rem;
+        }
     }
 
 }

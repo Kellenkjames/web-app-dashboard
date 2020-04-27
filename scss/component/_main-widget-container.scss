@@ -1,0 +1,21 @@
+/* ============================================= */
+/*              Widget Container                 */
+/* ============================================= */
+
+.widget-container-full, 
+.widget-container-half {
+    width: 95vw;
+}
+
+// RESPONSIVE [MOBILE FIRST-APPROACH]
+
+@media screen and (min-width: 768px) {
+    
+    .widget-container-full {
+        width: 90vw;
+    }
+
+    .widget-container-half {
+        width: 45vw;
+    }
+}

@@ -9,7 +9,6 @@
         border-radius: 5px;
         padding: 0 2%;
         margin-bottom: 2rem;
-        margin-right: 4rem;
         @include flex-standard;
 
         &__desc {
@@ -32,6 +31,21 @@
                 opacity: 1;
             }
         }
+    }
+
+}
+
+// RESPONSIVE [MOBILE FIRST-APPROACH]
+
+@media screen and (min-width: 768px) {
+
+    .main {
+
+        &__alert {
+            margin-right: 4rem;
+        }
+
+
     }
 
 }

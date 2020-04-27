@@ -38,6 +38,10 @@
   font-weight: 300;
 }
 
+.header h2 {
+  font-size: .9rem;
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,11 +109,19 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .header h2 {
+    font-size: 1.3rem;
+  }
 }
 
 /* ============================================= */
 /*              Main Dashboard                   */
 /* ============================================= */
+.dashboard-wrapper {
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
 .main__dashboard {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,6 +132,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main__dashboard h2 {
+  margin-bottom: 1rem;
 }
 
 .main__dashboard__search {
@@ -133,7 +151,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 90%;
+  width: 100%;
   position: relative;
   margin-bottom: 2rem;
 }
@@ -141,21 +159,44 @@
 .main__dashboard__search__icon {
   position: absolute;
   top: 30%;
-  left: calc(100% - 7.5rem);
+  left: calc(100% - 3.5rem);
   width: 2rem;
   max-width: 100%;
 }
 
 .main__dashboard [type="search"] {
-  width: 40%;
+  width: 90%;
   padding: .8rem;
   border: 1px solid #dfdfdf;
   border-radius: 5px;
   margin-right: 4%;
 }
 
-.dashboard-wrapper {
-  padding-left: 2rem;
+@media screen and (min-width: 768px) {
+  .dashboard-wrapper {
+    padding-left: 2rem;
+    margin-top: 0;
+  }
+  .main__dashboard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main__dashboard__search {
+    width: 90%;
+  }
+  .main__dashboard__search__icon {
+    left: calc(100% - 7.5rem);
+  }
+  .main__dashboard [type="search"] {
+    width: 40%;
+  }
 }
 
 /* ============================================= */
@@ -166,7 +207,6 @@
   border-radius: 5px;
   padding: 0 2%;
   margin-bottom: 2rem;
-  margin-right: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,6 +238,12 @@
 
 .main__alert__icon:hover {
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .main__alert {
+    margin-right: 4rem;
+  }
 }
 
 /* ============================================= */
@@ -596,32 +642,44 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
 }
 
 /* ============================================= */
+/*              Widget Container                 */
+/* ============================================= */
+.widget-container-full,
+.widget-container-half {
+  width: 95vw;
+}
+
+@media screen and (min-width: 768px) {
+  .widget-container-full {
+    width: 90vw;
+  }
+  .widget-container-half {
+    width: 45vw;
+  }
+}
+
+/* ============================================= */
 /*              Sidebar Navigation               */
 /* ============================================= */
 .nav {
   background-color: #4d4c72;
+  padding: 1.3rem;
 }
 
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 3rem;
-}
-
-.nav__item {
-  position: relative;
-}
-
-.nav__item:not(:last-child) {
-  margin-bottom: 3rem;
 }
 
 .nav__link:not(.active) svg {
@@ -654,9 +712,25 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
 
 .nav__link__svg {
   display: block;
-  height: 2.5rem;
+  height: 2rem;
   -webkit-transition: .3s opacity ease-in;
   transition: .3s opacity ease-in;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__list {
+    padding-top: 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav__item {
+    position: relative;
+  }
+  .nav__item:not(:last-child) {
+    margin-bottom: 3rem;
+  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
