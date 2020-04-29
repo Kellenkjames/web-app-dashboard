@@ -481,6 +481,7 @@
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    position: relative;
   }
   .members__container__date,
   .activity__container__date {
@@ -492,6 +493,11 @@
     height: 2rem;
     width: 2rem;
     margin-left: auto;
+    position: absolute;
+    right: 0;
+  }
+  .activity__text {
+    max-width: 11rem;
   }
 }
 
@@ -1256,6 +1262,7 @@ select {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2 / span 1;
+    padding-bottom: 2rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
