@@ -45,6 +45,7 @@
 
     .daily, .members, .message {
         grid-column: 1 / span 1;
+        padding-bottom: 2rem;
     }
 
     .mobile, .activity, .settings {

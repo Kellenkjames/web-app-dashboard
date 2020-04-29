@@ -210,7 +210,21 @@
 
         &__switch {
             width: 100%;
+            display: block;
+
+            &__btn {
+                margin-top: .5rem;
+            }
         }
+
+    }
+
+    .settings__container:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    .settings__container + .settings__container {
+        margin-bottom: 3rem;
     }
 
 }

@@ -400,8 +400,8 @@
   .social__container__box {
     padding: 2.5rem;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 31.5%;
-            flex: 0 0 31.5%;
+        -ms-flex: 0 0 48.5%;
+            flex: 0 0 48.5%;
     width: 48%;
   }
   .social__container__box:last-child {
@@ -495,6 +495,10 @@
     margin-left: auto;
     position: absolute;
     right: 0;
+  }
+  .members__container__date {
+    width: 100%;
+    text-align: right;
   }
   .activity__text {
     max-width: 11rem;
@@ -707,6 +711,16 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
   }
   .settings__switch {
     width: 100%;
+    display: block;
+  }
+  .settings__switch__btn {
+    margin-top: .5rem;
+  }
+  .settings__container:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .settings__container + .settings__container {
+    margin-bottom: 3rem;
   }
 }
 
@@ -1257,6 +1271,7 @@ select {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / span 1;
+    padding-bottom: 2rem;
   }
   .mobile, .activity, .settings {
     -ms-grid-column: 2;

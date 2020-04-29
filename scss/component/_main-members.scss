@@ -83,6 +83,20 @@
 
     }
 
+    .members {
+
+        &__container {
+
+            &__date {
+                width: 100%;
+                text-align: right;
+                
+            }
+
+        }
+
+    }
+
     .activity {
 
         &__text {
