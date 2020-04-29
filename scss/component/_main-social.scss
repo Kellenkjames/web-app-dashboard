@@ -83,11 +83,17 @@
                 &:last-child {
                     flex: 1;
                 }
+                
             }
 
-            &__p {
-                font-size: 3rem;
+            &__text {
+
+                p {
+                    font-size: 3rem;
+                }
+
             }
+            
 
         }
     }
@@ -105,7 +111,7 @@
                 width: 32%;
 
                 &:last-child {
-                    flex: 0;
+                    flex: none;
                 }
             }
 
