@@ -13,7 +13,8 @@
 
 .members,
 .activity {
-    @include main-gutter;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-bottom: 2rem;
 
     h3 {
@@ -21,8 +22,7 @@
     }
     
     &__container {
-        display: flex;
-        align-items: center;
+       display: block;
         
         &:not(:last-child) {
             margin-bottom: 2rem;
@@ -35,7 +35,8 @@
         }
         
         &__date {
-            margin-left: auto;
+            display: block;
+            margin-top: 1rem;
         }
         
     }
@@ -43,13 +44,41 @@
     &__container {
         
         &__arrow {
-            display: block;
-            height: 2rem;
-            width: 2rem;
-            margin-left: auto;
+            display: none;
         }
         
         
     }
         
+}
+
+// RESPONSIVE [MOBILE-FIRST APPROACH]
+
+@media screen and (min-width: 768px) {
+
+    .members,
+    .activity {
+        @include main-gutter;
+
+        &__container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            &__date {
+                margin-left: auto;
+            }
+
+            &__arrow {
+                display: block;
+                height: 2rem;
+                width: 2rem;
+                margin-left: auto;
+            }
+
+        }
+
+    }
+
+
 }

@@ -9,6 +9,7 @@
         border-radius: 5px;
         padding: 0 2%;
         margin-bottom: 2rem;
+        position: relative;
         @include flex-standard;
 
         &__desc {
@@ -26,6 +27,11 @@
             opacity: .5;
             cursor: pointer;
             transition: opacity .3s ease;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: .5rem;
+            margin-right: .5rem;
 
             &:hover {
                 opacity: 1;
@@ -42,7 +48,7 @@
     .main {
 
         &__alert {
-            margin-right: 4rem;
+            margin-right: 0rem;
         }
 
 

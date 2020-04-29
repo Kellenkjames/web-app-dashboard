@@ -61,10 +61,11 @@
 
         &__dashboard {
             @include flex-standard;
+            margin-top: 1rem;
         }
 
         &__dashboard__search {
-            width: 90%;
+            width: 100%;
 
             &__icon {
                 left: calc(100% - 7.5rem);
@@ -72,7 +73,7 @@
         }
 
         &__dashboard [type="search"] {
-            width: 40%;
+            width: 90%;
         }
     }
 
