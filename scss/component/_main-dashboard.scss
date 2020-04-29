@@ -61,7 +61,12 @@
 
         &__dashboard {
             @include flex-standard;
-            margin-top: 1rem;
+            flex-wrap: nowrap;
+
+            h2 {
+                margin-bottom: 0;
+                margin-right: 1rem;
+            }
         }
 
         &__dashboard__search {
@@ -73,7 +78,7 @@
         }
 
         &__dashboard [type="search"] {
-            width: 90%;
+            width: 40%;
         }
     }
 
