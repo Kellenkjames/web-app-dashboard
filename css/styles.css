@@ -414,6 +414,20 @@
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .social__container__box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 31.5%;
+            flex: 0 0 31.5%;
+    width: 32%;
+  }
+  .social__container__box:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+  }
+}
+
 /* ============================================= */
 /*              Main Members                     */
 /* ============================================= */
@@ -502,6 +516,12 @@
   }
   .activity__text {
     max-width: 11rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .activity__text {
+    max-width: 16rem;
   }
 }
 
@@ -721,6 +741,17 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
   }
   .settings__container + .settings__container {
     margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .settings__switch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .settings__container + .settings__container {
+    margin-bottom: 5.7rem;
   }
 }
 

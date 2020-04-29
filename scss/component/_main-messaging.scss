@@ -198,6 +198,7 @@
 }
 
 // RESPONSIVE [MOBILE FIRST APPROACH]
+
 @media screen and (min-width: 768px) {
 
     .message, 
@@ -226,5 +227,22 @@
     .settings__container + .settings__container {
         margin-bottom: 3rem;
     }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    .settings {
+
+        &__switch {
+            display: flex;
+        }
+
+    }
+
+    .settings__container + .settings__container {
+        margin-bottom: 5.7rem;
+    }
+
 
 }

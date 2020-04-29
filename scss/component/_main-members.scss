@@ -105,5 +105,16 @@
 
     }
 
+}
+
+@media screen and (min-width: 1000px) {
+
+    .activity {
+
+        &__text {
+            max-width: 16rem;
+        }
+
+    }
 
 }
