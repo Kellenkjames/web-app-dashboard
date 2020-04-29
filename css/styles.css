@@ -211,9 +211,11 @@
 .main__alert {
   background-color: #7377bf;
   border-radius: 5px;
-  padding: 0 2%;
+  padding: 1rem 2%;
   margin-bottom: 2rem;
-  position: relative;
+}
+
+.main__alert__banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,33 +225,13 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #FFFFFF;
 }
 
-.main__alert__desc {
-  color: #FFFFFF;
-  padding: 1rem;
-}
-
-.main__alert__icon {
-  color: #FFFFFF;
-  fill: currentColor;
-  height: 1.5rem;
-  width: 1.5rem;
-  display: block;
-  font-size: 1.2rem;
-  opacity: .5;
+.main__alert__banner__close {
   cursor: pointer;
-  -webkit-transition: opacity .3s ease;
-  transition: opacity .3s ease;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: .5rem;
-  margin-right: .5rem;
-}
-
-.main__alert__icon:hover {
-  opacity: 1;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 768px) {
