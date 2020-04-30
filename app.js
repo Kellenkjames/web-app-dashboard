@@ -36,7 +36,8 @@ let trafficData = {
             pointBackgroundColor: `rgba(255,255,255)`,
             pointBorderColor: 'rgba(116, 119, 191, 1)',
             pointBorderWidth: 2,
-            pointRadius: 10
+            pointRadius: 6,
+            lineTension: 0
 
         }]
     };
@@ -56,7 +57,7 @@ let trafficData = {
         legend : {
             display: false
         },
-
+    
     };
 
 let trafficChart = new Chart(trafficCanvas, {
