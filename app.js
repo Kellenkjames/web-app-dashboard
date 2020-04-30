@@ -23,6 +23,7 @@ alertBanner.addEventListener('click', e => {
 
 // Chart Widgets (Line Graph)
 const trafficCanvas = document.getElementById("traffic-chart");
+console.log(trafficCanvas);
 
 let trafficData = {
     labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
@@ -34,4 +35,28 @@ let trafficData = {
             borderWidth: 1,
         }]
     };
+    
+    let trafficOptions = {
+        aspectRatio: 2.5,
+        animation: {
+            duration: 0
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        },
+        legend : {
+            display: false
+        }
+    };
+
+let trafficChart = new Chart(trafficCanvas, {
+    type: 'line',
+    data: trafficData,
+    options: trafficOptions
+});
+    
     
