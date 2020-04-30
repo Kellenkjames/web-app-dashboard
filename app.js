@@ -20,3 +20,6 @@ alertBanner.addEventListener('click', e => {
     }
     
 });
+
+// Chart Widgets (Line Graph)
+const trafficChart = document.getElementById("traffic-chart");

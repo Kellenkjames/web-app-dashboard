@@ -16,8 +16,14 @@
 
             &__close {
                 cursor: pointer;
-                font-size: 1.2rem;
+                font-size: 1.4rem;
                 font-weight: 700;
+                opacity: .5;
+                transition: .3s opacity ease;
+
+                &:hover {
+                    opacity: 1;
+                }
             }
         }
     }
