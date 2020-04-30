@@ -5,9 +5,12 @@
 .traffic {
     border-bottom: 1px solid $color-border;
     @include main-gutter;
+    padding-bottom: 2rem;
+    overflow: hidden;
     
     &__header {
-        @include flex-standard;   
+        @include flex-standard;  
+        margin-bottom: 2rem; 
     }
     
     &__nav {

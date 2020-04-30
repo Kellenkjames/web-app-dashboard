@@ -253,6 +253,8 @@
 .traffic {
   border-bottom: 1px solid #d1d1d1;
   padding: 0 2rem;
+  padding-bottom: 2rem;
+  overflow: hidden;
 }
 
 .traffic__header {
@@ -265,6 +267,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .traffic__nav {
