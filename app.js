@@ -37,6 +37,7 @@ let trafficData = {
             pointBorderColor: 'rgba(116, 119, 191, 1)',
             pointBorderWidth: 2,
             pointRadius: 6,
+            pointHitRadius: 2,
             lineTension: 0
 
         }]
@@ -65,5 +66,7 @@ let trafficChart = new Chart(trafficCanvas, {
     data: trafficData,
     options: trafficOptions
 });
-    
+
+// Daily Bar (Chart)
+const dailyCanvas = document.getElementById("daily-chart");
     
