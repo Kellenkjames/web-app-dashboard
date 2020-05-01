@@ -67,7 +67,7 @@ let trafficData = {
         options: trafficOptions
     });
     
-    // Daily Bar (Chart)
+    // Daily Chart (Bar)
     const dailyCanvas = document.getElementById("daily-chart");
     
     // data for daily traffic bar chart
@@ -77,7 +77,9 @@ let trafficData = {
             label: '# of Hits',
             data: [75, 115, 175, 125, 225, 200, 100],
             backgroundColor: '#7477BF',
-            borderWidth: 1
+            borderWidth: 1,
+            barPercentage: .6,
+            
         }]
     };
     const dailyOptions = {
@@ -99,4 +101,6 @@ let trafficData = {
         options: dailyOptions
 
     });
-    
+
+    // Mobile Users (Pie Chart)
+    const mobileCanvas = document.getElementById("mobile-chart");
