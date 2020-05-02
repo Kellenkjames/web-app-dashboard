@@ -308,6 +308,7 @@
   position: relative;
   border-right: 1px solid #d1d1d1;
   padding: 0 2rem;
+  overflow: hidden;
 }
 
 .daily h3 {
@@ -768,6 +769,7 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
 /* ============================================= */
 .mobile {
   padding: 0 2rem;
+  overflow: hidden;
 }
 
 /* ============================================= */

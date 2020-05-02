@@ -103,10 +103,10 @@ let trafficData = {
     });
     
     // Mobile Users (Pie Chart)
-    const mobileCanvas = document.getElementById("mobile-chart");
+    const mobileCanvas = document.getElementById("mobile-users");
     
     const mobileData = {
-        labels: ["Desktop", "Tablet", "Phones"],
+        labels: ["Phones", "Tablet", "Desktop"],
         datasets: [{
             label: '# of Users',
             data: [2000, 550, 500],
@@ -118,4 +118,23 @@ let trafficData = {
             ]
         }]
     };
+    
+    const mobileOptions = {
+        legend: {
+            position: 'left',
+            labels: {
+                boxWidth: 20,
+                padding: 20,
+                fontSize: 16,
+                fontStyle: 'normal'
+            }
+        }
+    }
+    
+    let mobileChart = new Chart(mobileCanvas, {
+        type: 'doughnut',
+        data: mobileData,
+        options: mobileOptions
+        
+    });
     

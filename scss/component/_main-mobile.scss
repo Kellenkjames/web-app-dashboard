@@ -3,7 +3,8 @@
 /* ============================================= */
 
 .mobile {
-
+    
     @include main-gutter;
-
+    overflow: hidden;
+    
 }
