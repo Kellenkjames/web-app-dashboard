@@ -30,7 +30,7 @@ let trafficData = {
     "4-10", "11-17", "18-24", "25-31"],
     datasets: [{
         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-            2500],
+            2100],
             backgroundColor: 'rgba(116, 119, 191, .3)',
             borderWidth: 1,
             pointBackgroundColor: `rgba(255,255,255)`,
@@ -38,7 +38,7 @@ let trafficData = {
             pointBorderWidth: 2,
             pointRadius: 6,
             pointHitRadius: 2,
-            lineTension: 0.3
+            lineTension: 0
             
         }]
     };
@@ -65,7 +65,7 @@ let trafficData = {
         type: 'line',
         data: trafficData,
         options: trafficOptions
-        
+
     });
     
     // Daily Chart (Bar)
@@ -122,7 +122,7 @@ let trafficData = {
     
     const mobileOptions = {
         legend: {
-            position: 'left',
+            position: 'right',
             labels: {
                 boxWidth: 20,
                 padding: 20,

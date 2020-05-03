@@ -4,7 +4,18 @@
 
 .mobile {
     
-    @include main-gutter;
-    
-    
+       
+}
+
+/* RESPONSIVE [MOBILE-LAYOUT FIRST] */
+@media screen and (min-width: 768px) {
+
+    .mobile {
+
+        h3 {
+            padding-left: 2rem;
+        }
+
+    }
+
 }

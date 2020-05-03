@@ -4,12 +4,12 @@
 
 .traffic {
     border-bottom: 1px solid $color-border;
-    @include main-gutter;
     padding-bottom: 2rem;
     
     
     &__header {
         @include flex-standard;  
+        @include main-gutter;
         margin-bottom: 2rem; 
     }
     
@@ -46,3 +46,30 @@
     }
 
 }
+
+// RESPONSIVE [MOBILE FIRST-APPROACH]
+
+@media screen and (min-width: 768px) {
+    
+    .traffic {
+
+        &__nav {
+            width: 50%;
+        }
+
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .traffic {
+
+        &__nav {
+            width: 31%;
+        }
+
+    }
+    
+}
+

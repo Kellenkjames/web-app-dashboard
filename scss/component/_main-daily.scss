@@ -5,9 +5,22 @@
 .daily {
     position: relative;
     border-right: 1px solid $color-border;
-    @include main-gutter;
 
     h3 {
         margin-bottom: 1.5rem;
     }
+}
+
+
+/* RESPONSIVE [MOBILE-LAYOUT FIRST] */
+@media screen and (min-width: 768px) {
+
+    .daily {
+
+        h3 {
+            padding-left: 2rem;
+        }
+
+    }
+
 }
