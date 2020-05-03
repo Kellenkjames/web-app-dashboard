@@ -38,7 +38,7 @@ let trafficData = {
             pointBorderWidth: 2,
             pointRadius: 6,
             pointHitRadius: 2,
-            lineTension: 0
+            lineTension: 0.3
             
         }]
     };
@@ -65,6 +65,7 @@ let trafficData = {
         type: 'line',
         data: trafficData,
         options: trafficOptions
+        
     });
     
     // Daily Chart (Bar)
