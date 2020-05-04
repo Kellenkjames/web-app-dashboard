@@ -11,6 +11,10 @@
         @include flex-standard;  
         @include main-gutter;
         margin-bottom: 2rem; 
+
+        h3 {
+            margin-top: 0;
+        }
     }
     
     &__nav {
@@ -39,12 +43,12 @@
         }
         
         &__link:not(:first-child) {
-            margin-left: 2rem;
+            margin-left: 1rem;
         }
         
         
     }
-
+    
 }
 
 // RESPONSIVE [MOBILE FIRST-APPROACH]
@@ -52,24 +56,30 @@
 @media screen and (min-width: 768px) {
     
     .traffic {
-
+        
         &__nav {
-            width: 50%;
+            width: 44%;
+            
         }
-
+        
     }
     
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
     
     .traffic {
-
+        
         &__nav {
-            width: 31%;
+            width: 55%;
+            
         }
-
+        
     }
     
 }
+
+
+
+
 

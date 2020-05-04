@@ -6,6 +6,7 @@
 .widget-container-half {
     width: 95vw;
     @include main-gutter;
+    position: relative;
 }
 
 // RESPONSIVE [MOBILE FIRST-APPROACH]
@@ -13,10 +14,21 @@
 @media screen and (min-width: 768px) {
     
     .widget-container-full {
-        width: 92vw;
+        width: 88vw;
+        height: 40vh;
     }
 
     .widget-container-half {
         width: 45vw;
+        height: 40vh;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    
+    .widget-container-full {
+        width: 86vw;
     }
 }
+

@@ -44,7 +44,8 @@ let trafficData = {
     };
     
     let trafficOptions = {
-        aspectRatio: 2.5,
+        responsive: true,
+        maintainAspectRatio: false,
         animation: {
             duration: 1500
         },
@@ -84,6 +85,8 @@ let trafficData = {
         }]
     };
     const dailyOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
         scales: {
             yAxes: [{
                 ticks: {
@@ -121,6 +124,8 @@ let trafficData = {
     };
     
     const mobileOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
         legend: {
             position: 'right',
             labels: {

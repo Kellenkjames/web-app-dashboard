@@ -198,7 +198,7 @@
     width: 100%;
   }
   .main__dashboard__search__icon {
-    left: calc(100% - 7.5rem);
+    left: calc(100% - 3.5rem);
   }
   .main__dashboard [type="search"] {
     width: 40%;
@@ -269,6 +269,10 @@
   margin-bottom: 2rem;
 }
 
+.traffic__header h3 {
+  margin-top: 0;
+}
+
 .traffic__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,18 +301,18 @@
 }
 
 .traffic__nav__link:not(:first-child) {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 @media screen and (min-width: 768px) {
   .traffic__nav {
-    width: 50%;
+    width: 44%;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .traffic__nav {
-    width: 31%;
+    width: 55%;
   }
 }
 
@@ -797,14 +801,23 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
 .widget-container-half {
   width: 95vw;
   padding: 0 2rem;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
   .widget-container-full {
-    width: 92vw;
+    width: 88vw;
+    height: 40vh;
   }
   .widget-container-half {
     width: 45vw;
+    height: 40vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .widget-container-full {
+    width: 86vw;
   }
 }
 
@@ -1332,12 +1345,14 @@ select {
     -ms-grid-column-span: 1;
     grid-column: 1 / span 1;
     padding-bottom: 2rem;
+    overflow: hidden;
   }
   .mobile, .activity, .settings {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2 / span 1;
     padding-bottom: 2rem;
+    overflow: hidden;
   }
 }
 /*# sourceMappingURL=styles.css.map */
