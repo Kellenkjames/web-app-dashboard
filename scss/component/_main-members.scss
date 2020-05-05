@@ -5,6 +5,10 @@
 .members {
     border-right: 1px solid $color-border;
     border-bottom: 1px solid $color-border;
+
+    &__text {
+        flex: 0 0 65%;
+    }
 }
 
 .activity {
@@ -22,7 +26,7 @@
     }
     
     &__container {
-       display: block;
+       @include flex-standard;
         
         &:not(:last-child) {
             margin-bottom: 2rem;
@@ -42,7 +46,7 @@
         }
         
     }
-    
+
     &__container {
         
         &__arrow {
