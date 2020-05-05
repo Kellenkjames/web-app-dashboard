@@ -265,19 +265,26 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0 2rem;
   margin-bottom: 2rem;
 }
 
 .traffic__header h3 {
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .traffic__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 33%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .traffic__nav__link {
@@ -300,8 +307,12 @@
   border-radius: 1rem;
 }
 
+.traffic__nav__link:first-child {
+  padding-left: 0;
+}
+
 .traffic__nav__link:not(:first-child) {
-  margin-left: 1rem;
+  margin-left: 1.2rem;
 }
 
 @media screen and (min-width: 768px) {

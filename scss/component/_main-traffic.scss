@@ -9,17 +9,20 @@
     
     &__header {
         @include flex-standard;  
+        flex-wrap: wrap;
         @include main-gutter;
         margin-bottom: 2rem; 
 
         h3 {
             margin-top: 0;
+            margin-bottom: 1rem;
         }
     }
     
     &__nav {
         display: flex;
-        width: 33%;
+        flex-wrap: wrap;
+        justify-content: space-between;
         
         &__link {
             cursor: pointer;
@@ -41,9 +44,13 @@
                 border-radius: 1rem;
             }
         }
+
+        &__link:first-child {
+            padding-left: 0;
+        }
         
         &__link:not(:first-child) {
-            margin-left: 1rem;
+            margin-left: 1.2rem;
         }
         
         
