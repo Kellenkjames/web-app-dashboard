@@ -131,6 +131,15 @@
   .header__title {
     font-size: 1.4rem;
   }
+  .header__container__alerts::after {
+    left: calc(100% - 1rem);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header h2 {
+    font-size: 1.1rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -277,10 +286,6 @@
   margin-bottom: 2rem;
 }
 
-.main__alert p {
-  max-width: 11rem;
-}
-
 .main__alert__banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,6 +317,27 @@
   opacity: 1;
 }
 
+@media screen and (max-width: 425px) {
+  .main__alert p {
+    padding-top: 1rem;
+  }
+  .main__alert__banner__close {
+    top: calc(100% - 4.2rem);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main__alert__banner__close {
+    top: calc(100% - 5.2rem);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main__alert__banner__close {
+    top: calc(100% - 5.5rem);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .main__alert {
     margin-right: 0rem;
@@ -320,7 +346,7 @@
     max-width: none;
   }
   .main__alert__banner__close {
-    top: calc(100% - 2.3rem);
+    top: calc(100% - 1.2em);
     right: -1%;
   }
 }
@@ -971,7 +997,7 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
 /* ============================================= */
 .widget-container-full,
 .widget-container-half {
-  width: 95vw;
+  width: 100vw;
   height: 25vh;
   padding: 0 1rem;
   position: relative;
