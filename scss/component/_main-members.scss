@@ -61,6 +61,18 @@
 
 // RESPONSIVE [MOBILE-FIRST APPROACH]
 
+@media screen and (max-width: 425px) {
+
+    .members {
+
+        &__text {
+            flex: 0 0 79%;
+        }
+    }
+
+
+}
+
 @media screen and (min-width: 768px) {
 
     .members,
@@ -110,6 +122,26 @@
         }
 
     }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .members {
+
+        &__text {
+            flex: 0 0 75%;
+        }
+        
+    }
+
+    .activity {
+        
+        &__text {
+            max-width: none;
+        }
+    }
+
 
 }
 

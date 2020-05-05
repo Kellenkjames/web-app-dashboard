@@ -99,24 +99,3 @@
     }
 
 }
-
-@media screen and (min-width: 1000px) {
-
-    .social {
-
-        &__container {
-
-            &__box {
-                flex: 0 0 31.5%;
-                width: 32%;
-
-                &:last-child {
-                    flex: none;
-                }
-            }
-
-        }
-
-    }
-
-}
