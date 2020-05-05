@@ -37,10 +37,18 @@
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1440px) {
 
     .widget-container-full {
         width: 90vw;
+    }
+
+}
+
+@media screen and (min-width: 1900px) {
+
+    .widget-container-full {
+        width: 92vw;
     }
 
 }
