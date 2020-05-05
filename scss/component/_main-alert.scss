@@ -9,10 +9,16 @@
         border-radius: 5px;
         padding: 1rem 2%;
         margin-bottom: 2rem;
+
+        p {
+            max-width: 11rem;
+        }
         
         &__banner {
             @include flex-standard;
             color: $color-text-light;
+            padding-left: 1rem;
+            position: relative;
 
             &__close {
                 cursor: pointer;
@@ -20,6 +26,9 @@
                 font-weight: 700;
                 opacity: .5;
                 transition: .3s opacity ease;
+                position: absolute;
+                top: calc(100% - 3.5rem);
+                right: 2%;
 
                 &:hover {
                     opacity: 1;
