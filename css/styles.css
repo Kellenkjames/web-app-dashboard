@@ -261,7 +261,7 @@
   transition: .3s opacity ease;
   position: absolute;
   top: calc(100% - 3.5rem);
-  right: 2%;
+  right: -1%;
 }
 
 .main__alert__banner__close:hover {
@@ -359,7 +359,19 @@
 
 @media screen and (min-width: 768px) {
   .traffic__nav {
-    width: 74%;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .traffic__nav {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .traffic__nav {
+    width: 40%;
   }
 }
 
@@ -622,6 +634,19 @@
   }
   .activity__text {
     max-width: 16rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .activity__text {
+    max-width: 30rem;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .activity__text {
+    width: 90%;
   }
 }
 
@@ -917,6 +942,12 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
   }
   .widget-container-half {
     width: 44vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .widget-container-full {
+    width: 90vw;
   }
 }
 

@@ -96,7 +96,33 @@
     .traffic {
         
         &__nav {
-            width: 74%;
+            width: 60%;
+            
+        }
+        
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .traffic {
+        
+        &__nav {
+            width: 50%;
+            
+        }
+        
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .traffic {
+        
+        &__nav {
+            width: 40%;
             
         }
         

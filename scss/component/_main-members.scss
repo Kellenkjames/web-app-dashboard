@@ -145,4 +145,29 @@
 
 }
 
+@media screen and (min-width: 1200px) {
+
+    .activity {
+        
+        &__text {
+            max-width: 30rem;
+            width: 80%;
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .activity {
+        
+        &__text {
+            width: 90%;
+        }
+    }
+
+
+}
+
 
