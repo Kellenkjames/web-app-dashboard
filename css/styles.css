@@ -223,6 +223,12 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .main__dashboard__search__icon {
+    left: calc(100% - 4.5rem);
+  }
+}
+
 /* ============================================= */
 /*              Main Alert Bar                   */
 /* ============================================= */
