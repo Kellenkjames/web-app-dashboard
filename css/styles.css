@@ -607,7 +607,7 @@
             flex: 0 0 75%;
   }
   .activity__text {
-    max-width: none;
+    max-width: 16rem;
   }
 }
 
@@ -691,7 +691,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  font-size: .8rem;
 }
 
 .settings__switch__btn {
@@ -840,6 +839,17 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
   }
   .settings__container + .settings__container {
     margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .settings__switch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .settings__wrapper {
+    margin-bottom: 2.5rem;
   }
 }
 
