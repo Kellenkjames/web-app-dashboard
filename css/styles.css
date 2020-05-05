@@ -390,16 +390,10 @@
 }
 
 .traffic__nav__link {
-  cursor: pointer;
   padding: .5rem 5%;
   border-radius: 1rem;
   -webkit-transition: background-color .3s ease-in, color .3s ease-in;
   transition: background-color .3s ease-in, color .3s ease-in;
-}
-
-.traffic__nav__link:hover, .traffic__nav__link:focus, .traffic__nav__link:visited {
-  background-color: #81c98f;
-  color: #FFFFFF;
 }
 
 .traffic__nav__link--active {
@@ -407,6 +401,7 @@
   color: #FFFFFF;
   padding: .5rem 5%;
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 .traffic__nav__link:not(:first-child) {
