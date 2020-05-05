@@ -143,4 +143,9 @@ let trafficData = {
         options: mobileOptions
         
     });
+
+    // Messaging Section
+    const user = document.getElementById("userField");
+    const message = document.getElementById("messageField");
+    const send = document.getElementById("send");
     
