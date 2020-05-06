@@ -43,13 +43,15 @@
         &__alert {
 
             p {
-                padding-top: 1rem;
+                font-size: .9rem;
             }
             
             &__banner {
                 
                 &__close {
-                    top: calc(100% - 4.2rem);
+                    top: calc(100% - 2rem);
+                    font-size: 1.2rem !important;
+                    
                 }
                 
             }

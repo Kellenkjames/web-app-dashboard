@@ -321,10 +321,11 @@
 
 @media screen and (max-width: 425px) {
   .main__alert p {
-    padding-top: 1rem;
+    font-size: .9rem;
   }
   .main__alert__banner__close {
-    top: calc(100% - 4.2rem);
+    top: calc(100% - 2rem);
+    font-size: 1.2rem !important;
   }
 }
 
@@ -413,6 +414,9 @@
 @media screen and (max-width: 425px) {
   .traffic__header h3 {
     margin-bottom: .5rem;
+  }
+  .traffic__nav {
+    margin-left: 0;
   }
   .traffic__nav__link {
     font-size: 1rem;
