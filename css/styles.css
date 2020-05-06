@@ -421,6 +421,13 @@
   .traffic__nav__link {
     font-size: 1rem;
   }
+  .traffic__nav__link:first-child {
+    padding-left: 0;
+  }
+  .traffic__nav__link--active {
+    border-radius: 0;
+    border-bottom: 1px solid #81c98f;
+  }
 }
 
 @media screen and (max-width: 320px) {

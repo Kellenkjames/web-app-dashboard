@@ -64,7 +64,16 @@
             margin-left: 0;
             
             &__link {
+                
+                &:first-child {
+                    padding-left: 0;
+                }
                 font-size: 1rem;
+
+                &--active {
+                    border-radius: 0;
+                    border-bottom: 1px solid $color-btn-v2;
+                }
             }
 
         }
