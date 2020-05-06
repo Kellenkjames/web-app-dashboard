@@ -62,15 +62,18 @@
                 display: block;
                 height: 1.5rem;
                 width: 100%;
+                overflow: visible;
                 cursor: pointer;
                 opacity: .5;
                 transition: opacity .3s ease;
-                
+                fill: $color-text-light;
+            
                 &:hover {
                     opacity: 1;
                 }
             }   
         }
+        
         
         // Avatar & User Profile Desc
         

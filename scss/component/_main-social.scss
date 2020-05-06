@@ -43,10 +43,20 @@
                 fill: currentColor;
                 height: 2.5rem;
                 width: 2.5rem;
+
+                path {
+                    stroke: $color-text-light;
+                    stroke-width: 1;
+                    stroke-dasharray: 160;
+                    stroke-dashoffset: 160;
+        
+                    animation: offset 2.5s linear forwards, fill-it .8s 3s forwards;
+    
+                }
             }
             
         }
-        
+
         &__text {
             line-height: 1;
             
@@ -64,6 +74,20 @@
         
     }
     
+}
+
+// KEYFRAMES
+
+@keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill-it {
+    100% {
+        fill: $color-text-light;
+    }
 }
 
 // RESPONSIVE [MOBILE-FIRST APPROACH]

@@ -92,10 +92,12 @@
   display: block;
   height: 1.5rem;
   width: 100%;
+  overflow: visible;
   cursor: pointer;
   opacity: .5;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
+  fill: #FFFFFF;
 }
 
 .header__container__alerts__svg:hover {
@@ -529,6 +531,15 @@
   width: 2.5rem;
 }
 
+.social__container__img__svg path {
+  stroke: #FFFFFF;
+  stroke-width: 1;
+  stroke-dasharray: 160;
+  stroke-dashoffset: 160;
+  -webkit-animation: offset 2.5s linear forwards, fill-it .8s 3s forwards;
+          animation: offset 2.5s linear forwards, fill-it .8s 3s forwards;
+}
+
 .social__container__text {
   line-height: 1;
 }
@@ -542,6 +553,30 @@
   margin: 0;
   font-size: 2.2rem;
   font-weight: 300;
+}
+
+@-webkit-keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes fill-it {
+  100% {
+    fill: #FFFFFF;
+  }
+}
+
+@keyframes fill-it {
+  100% {
+    fill: #FFFFFF;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1094,16 +1129,10 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
 .nav__link__svg path {
   stroke: #FFFFFF;
   stroke-width: 1;
-  stroke-dasharray: 150;
-  stroke-dashoffset: 150;
+  stroke-dasharray: 130;
+  stroke-dashoffset: 130;
   -webkit-animation: offset 3s linear forwards;
           animation: offset 3s linear forwards;
-}
-
-@-webkit-keyframes offset {
-  100% {
-    stroke-dashoffset: 0;
-  }
 }
 
 @keyframes offset {
