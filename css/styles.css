@@ -331,13 +331,13 @@
 
 @media screen and (max-width: 375px) {
   .main__alert__banner__close {
-    top: calc(100% - 5.2rem);
+    top: calc(100% - 3.2rem);
   }
 }
 
 @media screen and (max-width: 320px) {
   .main__alert__banner__close {
-    top: calc(100% - 5.5rem);
+    top: calc(100% - 3.5rem);
   }
 }
 
@@ -389,7 +389,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: -0.7rem;
 }
 
 .traffic__nav__link {
@@ -416,17 +415,13 @@
     margin-bottom: .5rem;
   }
   .traffic__nav {
-    margin-left: 0;
+    margin: 0;
   }
   .traffic__nav__link {
     font-size: 1rem;
   }
   .traffic__nav__link:first-child {
     padding-left: 0;
-  }
-  .traffic__nav__link--active {
-    border-radius: 0;
-    border-bottom: 1px solid #81c98f;
   }
 }
 

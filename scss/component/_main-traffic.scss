@@ -21,7 +21,6 @@
     &__nav {
         display: flex;
         justify-content: space-between;
-        margin-left: -0.7rem;
         
         &__link {
             padding: .5rem 5%;
@@ -61,19 +60,15 @@
         }
 
         &__nav {
-            margin-left: 0;
+            margin: 0;
             
-            &__link {
-                
+            &__link {    
+               
                 &:first-child {
                     padding-left: 0;
                 }
+                
                 font-size: 1rem;
-
-                &--active {
-                    border-radius: 0;
-                    border-bottom: 1px solid $color-btn-v2;
-                }
             }
 
         }
@@ -87,6 +82,7 @@
         &__nav {
             
             &__link {
+                    
                 font-size: .82rem;
             }
 
