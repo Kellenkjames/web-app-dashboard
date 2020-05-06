@@ -9,7 +9,6 @@
     
     &__header {
         @include flex-standard;  
-        flex-wrap: wrap;
         @include main-gutter;
         margin-bottom: 2rem; 
 

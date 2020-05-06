@@ -9,6 +9,7 @@
     padding: .5rem 1rem;
     @include flex-standard;
     justify-content: center;
+    flex-wrap: wrap;
     
     * {
         color: $color-text-light;
