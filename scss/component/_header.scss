@@ -55,6 +55,8 @@
                 background: $color-accent-primary; 
                 height: 4rem;
                 width: .1rem;
+                position: absolute;
+                right: 0;
             }
             
             &__svg {

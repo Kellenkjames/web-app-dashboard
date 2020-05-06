@@ -85,6 +85,8 @@
   background: #5d61bf;
   height: 4rem;
   width: .1rem;
+  position: absolute;
+  right: 0;
 }
 
 .header__container__alerts__svg {
