@@ -1069,7 +1069,7 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
   content: '';
   position: absolute;
   top: -30%;
-  left: -85%;
+  left: -28%;
   background: #81c98f;
   height: 4rem;
   width: 4px;
@@ -1085,8 +1085,31 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
 .nav__link__svg {
   display: block;
   height: 2.5rem;
+  width: 100%;
   -webkit-transition: .3s opacity ease-in;
   transition: .3s opacity ease-in;
+  overflow: visible;
+}
+
+.nav__link__svg path {
+  stroke: #FFFFFF;
+  stroke-width: 1;
+  stroke-dasharray: 150;
+  stroke-dashoffset: 150;
+  -webkit-animation: offset 3s linear forwards;
+          animation: offset 3s linear forwards;
+}
+
+@-webkit-keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1501,19 +1524,13 @@ select {
   text-overflow: '';
 }
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 .grid-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
-  grid-template-columns: 100%;
+      grid-template-columns: 100%;
   -ms-grid-rows: auto;
-  grid-template-rows: auto;
+      grid-template-rows: auto;
       grid-template-areas: "header" "nav" "main";
 }
 
@@ -1539,20 +1556,16 @@ select {
 @media screen and (min-width: 768px) {
   .grid-container {
     -ms-grid-columns: minmax(120px, auto) 1fr;
-    grid-template-columns: minmax(120px, auto) 1fr;
+        grid-template-columns: minmax(120px, auto) 1fr;
         grid-template-areas: "header header" "nav main";
   }
   .main {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: auto;
-    grid-template-rows: auto;
+        grid-template-rows: auto;
     -ms-grid-columns: 50%;
-    grid-template-columns: 50%;
-  }
-  .main > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
+        grid-template-columns: 50%;
   }
   .traffic, .social, .dashboard-wrapper {
     -ms-grid-column: 1;
@@ -1572,19 +1585,6 @@ select {
     grid-column: 2 / span 1;
     padding-bottom: 2rem;
     overflow: hidden;
-  }
-  .grid-container > .header {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-  }
-  .grid-container > .nav {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-  .grid-container > .main {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
   }
 }
 /*# sourceMappingURL=styles.css.map */

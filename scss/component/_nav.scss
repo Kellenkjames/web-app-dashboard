@@ -30,7 +30,7 @@
             content: '';
             position: absolute;
             top: -30%;
-            left: -85%;
+            left: -28%;
             background: $color-btn-v2;
             height: 4rem;
             width: 4px;
@@ -48,11 +48,32 @@
         &__svg {
             display: block;
             height: 2.5rem;
+            width: 100%;
             transition: .3s opacity ease-in;
+            overflow: visible;
+
+            path {
+                stroke: $color-text-light;
+                stroke-width: 1;
+                stroke-dasharray: 150;
+                stroke-dashoffset: 150;
+    
+                animation: offset 3s linear forwards;
+
+            }
+            
         }
         
     }
 
+}
+
+// KEYFRAMES
+
+@keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+    }
 }
 
 // RESPONSIVE [MOBILE FIRST-APPROACH]
