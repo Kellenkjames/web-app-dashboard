@@ -138,6 +138,9 @@
   .header__container__alerts::after {
     left: calc(100% - 1rem);
   }
+  .header__container__alerts__accent {
+    right: -20%;
+  }
 }
 
 @media screen and (max-width: 375px) {
