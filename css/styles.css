@@ -397,12 +397,12 @@
 .traffic__nav__link {
   padding: .5rem 5%;
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 .traffic__nav__link--active {
   background-color: #81c98f;
   color: #FFFFFF;
-  cursor: pointer;
 }
 
 .traffic__nav__link:not(:first-child) {

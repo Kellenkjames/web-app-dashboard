@@ -24,11 +24,11 @@
         &__link {
             padding: .5rem 5%;
             border-radius: 1rem;
+            cursor: pointer;
             
             &--active {
                 background-color: $color-btn-v2;
                 color: $color-text-light; 
-                cursor: pointer;
             }
         }
 
