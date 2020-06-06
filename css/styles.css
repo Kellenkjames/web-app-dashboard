@@ -1117,7 +1117,7 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
   content: '';
   position: absolute;
   top: -30%;
-  left: -28%;
+  left: -22%;
   background: #81c98f;
   height: 4rem;
   width: 4px;
