@@ -417,11 +417,11 @@
     margin-bottom: .5rem;
   }
   .traffic__nav {
-    margin: 0;
+    margin-top: 1rem;
     width: 100%;
   }
   .traffic__nav__link {
-    font-size: 1rem;
+    font-size: .9rem;
   }
   .traffic__nav__link:first-child {
     padding-left: 0;
