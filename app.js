@@ -109,8 +109,12 @@ trafficNav.addEventListener('click', e => {
 			type: 'line',
 			data: trafficData,
 			options: trafficOptions
-		});
-    
+        });
+
+        // Remove styling from the active class
+        trafficWeekly.style.backgroundColor = "transparent";
+        trafficWeekly.style.color = "#666666";
+ 
     } else if (e.target === trafficDaily) {
 		let trafficData = {
 			labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
@@ -149,8 +153,12 @@ trafficNav.addEventListener('click', e => {
 			type: 'line',
 			data: trafficData,
 			options: trafficOptions
-		});
-    
+        });
+
+        // Remove styling from the default class 
+        trafficWeekly.style.backgroundColor = "transparent";
+        trafficWeekly.style.color = "#666666";
+        
     } else if (e.target === trafficWeekly) {
 		let trafficData = {
 			labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
@@ -189,8 +197,12 @@ trafficNav.addEventListener('click', e => {
 			type: 'line',
 			data: trafficData,
 			options: trafficOptions
-		});
-    
+        });
+
+        // Keep styling on the current element
+        trafficWeekly.style.backgroundColor = "#81c98f";
+        trafficWeekly.style.color = "#FFFFFF";
+        
     } else if (e.target === trafficMonthly) {
 		let trafficData = {
 			labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
@@ -229,11 +241,14 @@ trafficNav.addEventListener('click', e => {
 			type: 'line',
 			data: trafficData,
 			options: trafficOptions
-		});
+        });
+        
+        // Remove styling from the default class
+        trafficWeekly.style.backgroundColor = "transparent";
+        trafficWeekly.style.color = "#666666";
 	}
+
 });
-
-
 
 // Daily Chart (Bar)
 const dailyCanvas = document.getElementById("daily-chart");

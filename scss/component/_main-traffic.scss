@@ -25,6 +25,14 @@
             padding: .5rem 5%;
             border-radius: 1rem;
             cursor: pointer;
+            transition: background-color .3s ease, color .3s ease; 
+
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: $color-btn-v2 !important;
+                color: $color-text-light !important;
+            }
             
             &--active {
                 background-color: $color-btn-v2;

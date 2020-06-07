@@ -398,6 +398,13 @@
   padding: .5rem 5%;
   border-radius: 1rem;
   cursor: pointer;
+  -webkit-transition: background-color .3s ease, color .3s ease;
+  transition: background-color .3s ease, color .3s ease;
+}
+
+.traffic__nav__link:hover, .traffic__nav__link:active, .traffic__nav__link:focus {
+  background-color: #81c98f !important;
+  color: #FFFFFF !important;
 }
 
 .traffic__nav__link--active {
