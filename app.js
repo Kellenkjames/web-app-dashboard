@@ -76,8 +76,8 @@ trafficNav.addEventListener('click', e => {
 		let trafficData = {
 			labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
 			datasets: [{
-				data: [750, 3500, 1500, 500, 800, 1250, 1750, 900, 2250, 1500,
-					2100
+				data: [750, 2400, 1500, 500, 800, 1250, 1750, 900, 2250, 1500,
+					3000
 				],
 				backgroundColor: 'rgba(116, 119, 191, .3)',
 				borderWidth: 1,
@@ -116,8 +116,8 @@ trafficNav.addEventListener('click', e => {
 		let trafficData = {
 			labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
 			datasets: [{
-				data: [950, 1500, 500, 1000, 1500, 1350, 1250, 1450, 1800, 2250,
-					3000
+				data: [950, 1500, 500, 1000, 1500, 1350, 1250, 900, 1200, 500,
+					1400
 				],
 				backgroundColor: 'rgba(116, 119, 191, .3)',
 				borderWidth: 1,
@@ -196,8 +196,8 @@ trafficNav.addEventListener('click', e => {
 		let trafficData = {
 			labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
 			datasets: [{
-				data: [0, 300, 600, 900, 1200, 1500, 1800, 2100, 2300, 2500,
-					2800
+				data: [650, 1200, 400, 900, 2300, 1700, 2500, 200, 1000, 1500,
+					2000
 				],
 				backgroundColor: 'rgba(116, 119, 191, .3)',
 				borderWidth: 1,
@@ -236,11 +236,10 @@ trafficNav.addEventListener('click', e => {
 
 });
 
-// HELPER FUNCTION
+// HELPER FUNCTION [Managing the active navigation items on the TRAFFIC Chart]
 
 // Get all the li's with inside the traffic nav container
 let trafficListItems = document.querySelectorAll('.traffic__nav li');
-
 
 // Loop through the li's and add the active class to the current/clicked button
 for (let i = 0; i < trafficListItems.length; i++) {
