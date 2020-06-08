@@ -431,9 +431,6 @@
   .traffic__nav__link {
     font-size: .9rem;
   }
-  .traffic__nav__link:first-child {
-    padding-left: 0;
-  }
 }
 
 @media screen and (max-width: 320px) {
