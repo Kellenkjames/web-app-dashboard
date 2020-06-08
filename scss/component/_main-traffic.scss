@@ -34,7 +34,7 @@
                 color: $color-text-light !important;
             }
             
-            &--active {
+            &.active {
                 background-color: $color-btn-v2;
                 color: $color-text-light; 
             }
@@ -47,6 +47,7 @@
         
         
     }
+
     
 }
 

@@ -16,6 +16,7 @@ alertBanner.addEventListener('click', e => {
 	}
 });
 
+
 // Chart Widgets (Line Graph)
 const trafficCanvas = document.getElementById("traffic-chart");
 
@@ -111,10 +112,6 @@ trafficNav.addEventListener('click', e => {
 			options: trafficOptions
         });
 
-        // Remove styling from the active class
-        trafficWeekly.style.backgroundColor = "transparent";
-        trafficWeekly.style.color = "#666666";
- 
     } else if (e.target === trafficDaily) {
 		let trafficData = {
 			labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
@@ -155,10 +152,6 @@ trafficNav.addEventListener('click', e => {
 			options: trafficOptions
         });
 
-        // Remove styling from the default class 
-        trafficWeekly.style.backgroundColor = "transparent";
-        trafficWeekly.style.color = "#666666";
-        
     } else if (e.target === trafficWeekly) {
 		let trafficData = {
 			labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
@@ -199,10 +192,6 @@ trafficNav.addEventListener('click', e => {
 			options: trafficOptions
         });
 
-        // Keep styling on the current element
-        trafficWeekly.style.backgroundColor = "#81c98f";
-        trafficWeekly.style.color = "#FFFFFF";
-        
     } else if (e.target === trafficMonthly) {
 		let trafficData = {
 			labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
@@ -242,13 +231,34 @@ trafficNav.addEventListener('click', e => {
 			data: trafficData,
 			options: trafficOptions
         });
-        
-        // Remove styling from the default class
-        trafficWeekly.style.backgroundColor = "transparent";
-        trafficWeekly.style.color = "#666666";
+    
 	}
 
 });
+
+// HELPER FUNCTION
+
+// Get all the li's with inside the traffic nav container
+let trafficListItems = document.querySelectorAll('.traffic__nav li');
+
+
+// Loop through the li's and add the active class to the current/clicked button
+for (let i = 0; i < trafficListItems.length; i++) {
+    trafficListItems[i].addEventListener('click', function () {
+        let current = document.getElementsByClassName("active");
+
+        // If there's no active class
+        if (current.length > 0) {
+            current[0].className = current[0].className.replace(" active", "");
+        }
+
+        // Add the active class to the current/clicked button
+        this.className += " active";
+
+    })
+
+}
+
 
 // Daily Chart (Bar)
 const dailyCanvas = document.getElementById("daily-chart");

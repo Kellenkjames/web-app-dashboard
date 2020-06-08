@@ -407,7 +407,7 @@
   color: #FFFFFF !important;
 }
 
-.traffic__nav__link--active {
+.traffic__nav__link.active {
   background-color: #81c98f;
   color: #FFFFFF;
 }
