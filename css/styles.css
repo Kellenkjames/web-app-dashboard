@@ -420,6 +420,7 @@
   .traffic__header {
     display: block;
     margin-bottom: 1.5rem;
+    padding: 0 1rem;
   }
   .traffic__header h3 {
     margin-bottom: 1rem;
