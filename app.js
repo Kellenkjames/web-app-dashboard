@@ -342,3 +342,17 @@ send.addEventListener('click', (e) => {
 		alert(`Message successfully sent to: ${user.value}`);
 	}
 });
+
+// AUTOCOMPLETE FEATURE ["Search for User Box"]
+
+$( function() {
+    var availableTags = [
+      "Victoria Chambers",
+      "Dale Byrd",
+      "Dawn Wood",
+      "Dan Oliver"
+    ];
+    $( "#userField" ).autocomplete({
+      source: availableTags
+    });
+  } );
