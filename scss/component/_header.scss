@@ -28,7 +28,7 @@
         font-size: .9rem;
     }
     
-    // Alerts & Notifications
+    // Alerts 
     
     &__container {
         @include flex-standard;
@@ -73,7 +73,13 @@
                 &:hover {
                     opacity: 1;
                 }
-            }   
+            }
+            
+        }
+
+        // Notifications
+        &__notifications {
+            display: none;
         }
         
         
@@ -93,7 +99,6 @@
         }
         
     }
-    
 } 
 
 // RESPONSIVE [MOBILE FIRST-APPROACH]

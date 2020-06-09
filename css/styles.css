@@ -106,6 +106,10 @@
   opacity: 1;
 }
 
+.header__container__notifications {
+  display: none;
+}
+
 .header__container__profile {
   position: relative;
   padding-left: 2rem;
