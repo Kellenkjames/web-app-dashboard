@@ -29,9 +29,9 @@ const trafficDaily = document.querySelector(".traffic #daily");
 const trafficWeekly = document.querySelector(".traffic #weekly");
 const trafficMonthly = document.querySelector(".traffic #monthly");
 
-// Defalt Chart (Weekly)
+// Default Chart (Weekly)
 
-let trafficData = {
+let trafficDataWeekly = {
     labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
     datasets: [{
         data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
@@ -66,14 +66,14 @@ let trafficOptions = {
 };
 let defaultTrafficChart = new Chart(trafficCanvas, {
     type: 'line',
-    data: trafficData,
+    data: trafficDataWeekly,
     options: trafficOptions
 });
 
 trafficNav.addEventListener('click', e => {
     
 	if (e.target === trafficHourly) {
-		let trafficData = {
+		let trafficDataHourly = {
 			labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
 			datasets: [{
 				data: [750, 2400, 1500, 500, 800, 1250, 1750, 900, 2250, 1500,
@@ -108,12 +108,12 @@ trafficNav.addEventListener('click', e => {
 		};
 		let trafficChart = new Chart(trafficCanvas, {
 			type: 'line',
-			data: trafficData,
+			data: trafficDataHourly,
 			options: trafficOptions
         });
 
     } else if (e.target === trafficDaily) {
-		let trafficData = {
+		let trafficDataDaily = {
 			labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
 			datasets: [{
 				data: [950, 1500, 500, 1000, 1500, 1350, 1250, 900, 1200, 500,
@@ -148,12 +148,12 @@ trafficNav.addEventListener('click', e => {
 		};
 		let trafficChart = new Chart(trafficCanvas, {
 			type: 'line',
-			data: trafficData,
+			data: trafficDataDaily,
 			options: trafficOptions
         });
 
     } else if (e.target === trafficWeekly) {
-		let trafficData = {
+		let trafficDataWeekly = {
 			labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
 			datasets: [{
 				data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
@@ -188,12 +188,12 @@ trafficNav.addEventListener('click', e => {
 		};
 		let trafficChart = new Chart(trafficCanvas, {
 			type: 'line',
-			data: trafficData,
+			data: trafficDataWeekly,
 			options: trafficOptions
         });
 
     } else if (e.target === trafficMonthly) {
-		let trafficData = {
+		let trafficDataMonthly = {
 			labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
 			datasets: [{
 				data: [650, 1200, 400, 900, 2300, 1700, 2500, 200, 1000, 1500,
@@ -228,7 +228,7 @@ trafficNav.addEventListener('click', e => {
 		};
 		let trafficChart = new Chart(trafficCanvas, {
 			type: 'line',
-			data: trafficData,
+			data: trafficDataMonthly,
 			options: trafficOptions
         });
     
