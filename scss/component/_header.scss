@@ -78,8 +78,29 @@
         }
 
         // Notifications
-        &__notifications span {
-            display: none;
+        &__notifications {
+            position: absolute;
+            top: 150%;
+            right: 0;
+            width: 20rem;
+            padding: 2rem;
+            z-index: 10;
+            box-shadow: 1px 4px 8px $color-text-dark; 
+            background-color: $color-bg-primary;
+
+            h4 {
+                margin-top: 0;
+                margin-bottom: 1rem;
+            }
+
+            h4, span {
+                display: block;
+                color: $color-text-dark;
+            }
+
+            span:not(:last-child) {
+                margin-bottom: 1rem;
+            }
         }
         
         

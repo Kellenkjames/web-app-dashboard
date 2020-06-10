@@ -106,8 +106,30 @@
   opacity: 1;
 }
 
-.header__container__notifications span {
-  display: none;
+.header__container__notifications {
+  position: absolute;
+  top: 150%;
+  right: 0;
+  width: 20rem;
+  padding: 2rem;
+  z-index: 10;
+  -webkit-box-shadow: 1px 4px 8px #666666;
+          box-shadow: 1px 4px 8px #666666;
+  background-color: #fbfbfb;
+}
+
+.header__container__notifications h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.header__container__notifications h4, .header__container__notifications span {
+  display: block;
+  color: #666666;
+}
+
+.header__container__notifications span:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .header__container__profile {
