@@ -13,8 +13,26 @@ const trafficMonthly = document.querySelector(".traffic #monthly");
 // Alert Banner
 const alertBanner = document.getElementById("alert");
 
+// Notification (Alerts Icon)
+const header = document.getElementById("header");
+const notificationIcon = document.getElementById("notification");
+const notifications = document.querySelector(".header__container__notifications");
+
+
 // Global instance of chart
 var myChart;
+
+// Trigger dropdown from Notification Icon
+document.addEventListener('click', e => {
+    const element = e.target;
+    if (element === notificationIcon) {
+        notifications.style.display = "block";
+    }
+    else {
+        notifications.style.display = "none";
+    }
+    
+});
 
 // Create the HTML for the banner
 alertBanner.innerHTML = `<div class="main__alert__banner"> 
