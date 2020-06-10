@@ -119,8 +119,7 @@
 }
 
 .header__container__notifications h4 {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
 .header__container__notifications h4, .header__container__notifications span {
@@ -130,6 +129,36 @@
 
 .header__container__notifications span:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+.header__container__notifications__header {
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__container__notifications__header__number {
+  position: relative;
+}
+
+.header__container__notifications__header__number::before {
+  content: '';
+  border-radius: 50%;
+  border: 2px solid #7377bf;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .header__container__profile {
