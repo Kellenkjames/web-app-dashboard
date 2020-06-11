@@ -84,10 +84,11 @@
             right: 15%;
             width: 20rem;
             padding: 2rem;
-            z-index: 10;
+            z-index: 1;
             box-shadow: 1px 4px 8px $color-text-dark; 
             background-color: $color-bg-primary;
             display: none;
+            
 
             h4 {
                 margin: 0;

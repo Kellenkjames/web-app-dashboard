@@ -13,23 +13,24 @@ const trafficMonthly = document.querySelector(".traffic #monthly");
 // Alert Banner
 const alertBanner = document.getElementById("alert");
 
-// Notification (Alerts Icon)
-const header = document.getElementById("header");
-const notificationIcon = document.getElementById("notification");
-const notifications = document.querySelector(".header__container__notifications");
-
+// Notifications
+const notificationTrigger = document.querySelector("#iconTrigger");
+const notificationsDropdown = document.querySelector(".header__container__notifications");
 
 // Global instance of chart
 var myChart;
 
 // Trigger dropdown from Notification Icon
-document.addEventListener('click', e => {
+document.addEventListener('click', (e) => {
+    
     const element = e.target;
-    if (element === notificationIcon) {
-        notifications.style.display = "block";
+    console.log(element);
+
+    if (element === notificationTrigger && notificationsDropdown.style.display === "none" || element.matches(".header__container__notifications") || element.matches(".header__container__notifications__header") || element.matches(".header__container__notifications__header__title") || element.matches(".header__container__notifications__header__number") || element.matches(".header__container__notifications__member")) {
+        notificationsDropdown.style.display = "block";
     }
     else {
-        notifications.style.display = "none";
+        notificationsDropdown.style.display = "none";
     }
     
 });
@@ -94,12 +95,12 @@ function addWeeklyData() {
         data: trafficData,
         options: trafficOptions
     });
-  
+    
 }
 
 // Add Hourly Data
 function addDataHourly() {
-
+    
     let trafficData = {
         labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
         datasets: [{
@@ -141,7 +142,7 @@ function addDataHourly() {
 
 // Add Daily Data 
 function addDataDaily() {
-
+    
     let trafficData = {
         labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
         datasets: [{
@@ -183,7 +184,7 @@ function addDataDaily() {
 
 // Add Monthly Data
 function addMonthlyData() {
-
+    
     let trafficData = {
         labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
         datasets: [{
@@ -222,8 +223,8 @@ function addMonthlyData() {
         data: trafficData,
         options: trafficOptions
     });
-
-
+    
+    
 }
 
 // Weekly Chart will be called by default
