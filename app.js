@@ -24,9 +24,8 @@ var myChart;
 document.addEventListener('click', (e) => {
     
     const element = e.target;
-    console.log(element);
-
-    if (element === notificationTrigger && notificationsDropdown.style.display === "none" || element.matches(".header__container__notifications") || element.matches(".header__container__notifications__header") || element.matches(".header__container__notifications__header__title") || element.matches(".header__container__notifications__header__number") || element.matches(".header__container__notifications__member")) {
+    
+    if (element === notificationTrigger && notificationsDropdown.style.display === "none" || element.matches(".header__container__notifications") || element.matches(".header__container__notifications__header") || element.matches(".header__container__notifications__header__title") || element.matches(".header__container__notifications__header__number") || element.matches(".header__container__notifications__member") || element.matches(".header__container__notifications__member__img") || element.matches(".header__container__notifications__member__desc")) {
         notificationsDropdown.style.display = "block";
     }
     else {

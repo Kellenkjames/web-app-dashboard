@@ -178,7 +178,7 @@
   margin-bottom: 1rem;
 }
 
-.header__container__notifications__member img {
+.header__container__notifications__member__img {
   border-radius: 50%;
   width: 3rem;
   margin-right: .7rem;
@@ -264,7 +264,7 @@
             justify-content: center;
     text-align: center;
   }
-  .header__container__notifications__member img {
+  .header__container__notifications__member__img {
     margin-right: 0;
   }
 }

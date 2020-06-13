@@ -130,7 +130,7 @@
                     margin-bottom: 1rem;
                 }
 
-                img {
+                &__img {
                     border-radius: 50%;
                     width: 3rem;
                     margin-right: .7rem;
@@ -241,7 +241,7 @@
                     justify-content: center;
                     text-align: center;
 
-                    img {
+                    &__img {
                         margin-right: 0;
                     }
                 }
