@@ -82,14 +82,13 @@
             position: fixed;
             top: 7%;
             right: 15%;
-            width: 20rem;
+            width: 24rem;
             padding: 2rem;
             z-index: 1;
             box-shadow: 1px 4px 8px $color-text-dark; 
             background-color: $color-bg-primary;
             display: none;
-            
-
+           
             h4 {
                 margin: 0;
             }
@@ -123,6 +122,21 @@
                     }
                 }
                 
+            }
+
+            &__member {
+
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+
+                img {
+                    border-radius: 50%;
+                    width: 3rem;
+                    margin-right: .7rem;
+                }
+
+                @include flex-standard;
             }
         }
         
