@@ -82,7 +82,7 @@
             position: fixed;
             top: 7%;
             right: 15%;
-            width: 24rem;
+            width: 22rem;
             padding: 2rem;
             z-index: 1;
             box-shadow: 1px 4px 8px $color-text-dark; 
@@ -161,6 +161,18 @@
 
 // RESPONSIVE [MOBILE FIRST-APPROACH]
 
+@media screen and (min-width: 768px) {
+    
+    .header {
+        justify-content: space-between;
+        
+        h2 {
+            font-size: 1.3rem;
+        }
+    }
+    
+}
+
 @media screen and (max-width: 425px) {
     
     .header {
@@ -183,9 +195,13 @@
                 }
             }
 
-            
+            &__notifications {
+                top: 9.5%;
+                right: 10%;
+                width: 19rem;
+            }
+
         }
-        
     }   
 }
 
@@ -196,6 +212,14 @@
         h2 {
             font-size: 1.1rem;
         }
+
+        &__container {
+
+            &__notifications {
+                right: 4%;
+            }
+            
+        }
     }
     
 }
@@ -204,20 +228,30 @@
     
     .header {
         flex-wrap: wrap;
-    }
-    
-}
 
+        &__container {
 
-@media screen and (min-width: 768px) {
-    
-    .header {
-        justify-content: space-between;
-        
-        h2 {
-            font-size: 1.3rem;
+            &__notifications {
+                top: 14.5%;
+                right: 7%;
+                width: 15rem;
+
+                &__member {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    text-align: center;
+
+                    img {
+                        margin-right: 0;
+                    }
+                }
+            }
+
         }
     }
     
 }
+
+
+
 
