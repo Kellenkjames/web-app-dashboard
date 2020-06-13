@@ -21,7 +21,7 @@ const notificationsDropdown = document.querySelector(".header__container__notifi
 var myChart;
 
 // Trigger dropdown from Notification Icon
-document.addEventListener('click', (e) => {
+document.addEventListener('click', e => {
     
     const element = e.target;
     
