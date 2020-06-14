@@ -365,17 +365,17 @@ settings.addEventListener('click', e => {
     const element = e.target;
 
     // Get the value from the switch buttons 
-    let emailNotifiations = document.getElementById("notifications").value
-    console.log(emailNotifiations);
-    let publicSettings = document.getElementById("public").value;
+    // let emailNotifiations = document.getElementById("notifications").value
+    // console.log(emailNotifiations);
+    // let publicSettings = document.getElementById("public").value;
 
-    if (element === emailNotifiations || element === publicSettings) {
+    // if (element === emailNotifiations || element === publicSettings) {
         
-        localStorage.setItem("Email Notifications", emailNotifiations);
-        localStorage.setItem("Profile Settings", publicSettings);
+    //     localStorage.setItem("Email Notifications", emailNotifiations);
+    //     localStorage.setItem("Profile Settings", publicSettings);
 
 
-    }
+    // }
 
 
 });

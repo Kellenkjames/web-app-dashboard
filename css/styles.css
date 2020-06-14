@@ -944,7 +944,7 @@
   margin-bottom: 4.5rem;
 }
 
-.settings__switch {
+.settings label.switch-light {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -954,58 +954,17 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
 }
 
-.settings__switch__btn {
-  width: 110px;
-  height: 40px;
-  background: #e5e5e5;
-  position: relative;
-  border-radius: 20px;
-  -webkit-box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.3);
+.settings .switch-wrapper {
+  width: 30% !important;
+  margin-left: auto;
+  background-color: #7377bf !important;
 }
 
-.settings__switch__btn::before {
-  content: '';
-  position: absolute;
-  height: 36px;
-  width: 36px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#f2f2f2));
-  background: linear-gradient(#FFF, #f2f2f2);
-  left: 2px;
-  top: 2px;
-  cursor: pointer;
-  border-radius: 50%;
-  -webkit-transition: all 150ms ease-out;
-  transition: all 150ms ease-out;
-  -webkit-box-shadow: 0 8px 6px 2px -4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 8px 6px 2px -4px rgba(0, 0, 0, 0.25);
-}
-
-.settings__switch input[type=checkbox] {
-  display: none;
-}
-
-input[type=checkbox]:checked + .settings__switch__btn:before {
-  left: 70px;
-}
-
-input[type=checkbox]:checked + .settings__switch__btn {
-  background: #7377bf;
-}
-
-input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type {
-  position: relative;
-  opacity: 1;
-  top: 20%;
-  left: 15%;
-}
-
-.settings__switch__type {
+.settings .switch-ios.switch-light span span {
   color: #FFFFFF;
-  opacity: 0;
+  text-transform: uppercase;
 }
 
 .settings__wrapper {
@@ -1073,18 +1032,6 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
   cursor: pointer;
 }
 
-@media screen and (max-width: 425px) {
-  .settings__switch {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .settings__switch {
-    font-size: .85rem;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .message,
   .settings {
@@ -1098,11 +1045,17 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
   .settings__switch__btn {
     margin-top: .5rem;
   }
+  .settings__timezone {
+    margin-bottom: 4.5rem;
+  }
+  .settings .switch-light strong {
+    font-size: .9rem;
+  }
   .settings__container:not(:last-child) {
     margin-bottom: 1rem;
   }
   .settings__container + .settings__container {
-    margin-bottom: 3rem;
+    margin-bottom: 4.5rem;
   }
 }
 
@@ -1113,7 +1066,25 @@ input[type=checkbox]:checked + .settings__switch__btn > .settings__switch__type 
     display: flex;
   }
   .settings__wrapper {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.4rem;
+  }
+  .settings__timezone {
+    margin-bottom: 2rem;
+  }
+  .settings .switch-light strong {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .settings__switch {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .settings__switch {
+    font-size: .85rem;
   }
 }
 
