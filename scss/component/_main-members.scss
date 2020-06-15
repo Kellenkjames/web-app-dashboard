@@ -61,18 +61,6 @@
 
 // RESPONSIVE [MOBILE-FIRST APPROACH]
 
-@media screen and (max-width: 425px) {
-
-    .members {
-
-        &__text {
-            flex: 0 0 79%;
-        }
-    }
-
-
-}
-
 @media screen and (min-width: 768px) {
 
     .members,
@@ -82,7 +70,7 @@
         &__container {
             display: flex;
             align-items: center;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             position: relative;
 
             &__date {
@@ -165,6 +153,18 @@
         &__text {
             max-width: 39rem;
             width: 90%;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .members {
+
+        &__text {
+            flex: 0 0 79%;
         }
     }
 

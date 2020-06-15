@@ -804,14 +804,6 @@
   display: none;
 }
 
-@media screen and (max-width: 425px) {
-  .members__text {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 79%;
-            flex: 0 0 79%;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .members,
   .activity {
@@ -825,8 +817,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     position: relative;
   }
   .members__container__date,
@@ -872,6 +864,14 @@
   .activity__text {
     max-width: 39rem;
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .members__text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 79%;
+            flex: 0 0 79%;
   }
 }
 
