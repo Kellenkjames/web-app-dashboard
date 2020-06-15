@@ -361,23 +361,35 @@ $( function() {
 const settings = document.getElementById('settings');
 
 settings.addEventListener('click', e => {
-
+    
     const element = e.target;
+    
+    const saveButton = document.getElementById("save");
+    const cancelButton = document.getElementById("cancel");
 
-    // Get the value from the switch buttons 
-    // let emailNotifiations = document.getElementById("notifications").value
-    // console.log(emailNotifiations);
-    // let publicSettings = document.getElementById("public").value;
+    const checkbox = document.getElementById("checked");
+    
+    // If the user saves the settings 
 
-    // if (element === emailNotifiations || element === publicSettings) {
+    if (checkbox) {
+
+        alert("Yo");
         
-    //     localStorage.setItem("Email Notifications", emailNotifiations);
-    //     localStorage.setItem("Profile Settings", publicSettings);
+        // Save the HTML to localStorage
+        localStorage.setItem("emailNotifications", emailOn);
+        
+    }
+    
+    // If the settings are reset when the "cancel" button is clicked 
+    
+}, false);
 
+// Check for saved settings 
+const saved = localStorage.getItem("emailNotifications");
 
-    // }
-
-
-});
+// If there are any saved items, update our settings
+if (saved) {
+    emailOn = saved;
+}
 
 

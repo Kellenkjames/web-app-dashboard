@@ -138,7 +138,9 @@
             text-transform: uppercase;
             cursor: pointer;
 
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
                 background-color: $color-btn-v2;
             }
         }

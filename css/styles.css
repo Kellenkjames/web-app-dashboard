@@ -1017,7 +1017,7 @@
   cursor: pointer;
 }
 
-.settings__buttons--primary:hover {
+.settings__buttons--primary:hover, .settings__buttons--primary:active, .settings__buttons--primary:focus {
   background-color: #81c98f;
 }
 
