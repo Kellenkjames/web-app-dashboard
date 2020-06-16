@@ -37,7 +37,7 @@ document.addEventListener('click', e => {
 // Create the HTML for the banner
 alertBanner.innerHTML = `<div class="main__alert__banner"> 
 <p>
-<strong>Alert:</strong> You have <strong>6</strong> overdue tasks to 
+<strong>Alert:</strong> You have <strong>5</strong> overdue tasks to 
 complete.
 </p>
 <p class="main__alert__banner__close">x</p>
