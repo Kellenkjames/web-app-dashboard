@@ -226,8 +226,10 @@ function addMonthlyData() {
     
 }
 
-// Weekly Chart will be called by default
-addWeeklyData();
+// Weekly Chart will be called on page load
+window.onload = function() {
+    addWeeklyData();
+}
 
 // Set listeners on buttons 
 trafficHourly.addEventListener('click', addDataHourly);
