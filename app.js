@@ -367,20 +367,16 @@ settings.addEventListener('click', e => {
     const saveButton = document.getElementById("save");
     const cancelButton = document.getElementById("cancel");
 
-    const checkbox = document.getElementById("checked");
+    const checkbox = document.getElementById("checkbox");
     
-    // If the user saves the settings 
+    // If the element is checked, save the user settings 
 
-    if (checkbox) {
+    if (checkbox.checked) {
 
-        alert("Yo");
-        
         // Save the HTML to localStorage
-        localStorage.setItem("emailNotifications", emailOn);
+        localStorage.setItem("emailNotifications", checkbox.value);
         
     }
-    
-    // If the settings are reset when the "cancel" button is clicked 
     
 }, false);
 
@@ -389,7 +385,7 @@ const saved = localStorage.getItem("emailNotifications");
 
 // If there are any saved items, update our settings
 if (saved) {
-    emailOn = saved;
+    checkbox.checked = saved;
 }
 
 
