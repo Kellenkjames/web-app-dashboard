@@ -367,25 +367,44 @@ settings.addEventListener('click', e => {
     const saveButton = document.getElementById("save");
     const cancelButton = document.getElementById("cancel");
 
-    const checkbox = document.getElementById("checkbox");
+    const checkboxOne = document.getElementById("checkboxOne");
+    const checkboxTwo = document.getElementById("checkboxTwo");
     
     // If the element is checked, save the user settings 
 
-    if (checkbox.checked) {
-
-        // Save the HTML to localStorage
-        localStorage.setItem("emailNotifications", checkbox.value);
+    if (checkboxOne.checked) {
         
+        // Save the HTML to localStorage
+        localStorage.setItem("emailNotifications", checkboxOne.checked);
+
+    } else {
+        localStorage.removeItem("emailNotifications", checkboxOne.checked);
     }
+
+    if (checkboxTwo.checked) {
+        // Save the HTML to localStorage
+        localStorage.setItem("publicNotifications", checkboxTwo.checked);
+    } else {
+        localStorage.removeItem("publicNotifications", checkboxTwo.checked);
+    }
+
     
 }, false);
 
 // Check for saved settings 
-const saved = localStorage.getItem("emailNotifications");
+const savedOne = localStorage.getItem("emailNotifications");
+const savedTwo = localStorage.getItem("publicNotifications");
 
 // If there are any saved items, update our settings
-if (saved) {
-    checkbox.checked = saved;
+if (savedOne) {
+    checkboxOne.checked = savedOne;
+} 
+
+if (savedTwo) {
+    checkboxTwo.checked = savedTwo;
 }
+
+
+
 
 
