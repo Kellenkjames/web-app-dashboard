@@ -358,36 +358,43 @@ $( function() {
 
 // LOCAL STORAGE [SETTINGS] 
 
-const settings = document.getElementById('settings');
+const saveButton = document.getElementById("save");
+const cancelButton = document.getElementById("cancel");
 
-settings.addEventListener('click', e => {
+// When the user hits the save button, store the settings
+saveButton.addEventListener('click', e => {
     
     const element = e.target;
     
-    const saveButton = document.getElementById("save");
-    const cancelButton = document.getElementById("cancel");
-
     const checkboxOne = document.getElementById("checkboxOne");
     const checkboxTwo = document.getElementById("checkboxTwo");
     
-    // If the element is checked, save the user settings 
-
+    // If the element is checked, save the emailNotifications to localStorage
     if (checkboxOne.checked) {
-        
-        // Save the HTML to localStorage
         localStorage.setItem("emailNotifications", checkboxOne.checked);
+    } 
+    
+    // If the element is checked, save the publicNotifications to localStorage
+    if (checkboxTwo.checked) {
+        localStorage.setItem("publicNotifications", checkboxTwo.checked);
+    } 
+    
+}, false);
 
-    } else {
+// When the user hits the cancel button, remove the settings
+cancelButton.addEventListener('click', e => {
+    
+    const element = e.target;
+    
+    // If the element is unchecked, remove the emailNotifications from localStorage
+    if (checkboxOne.checked) {
         localStorage.removeItem("emailNotifications", checkboxOne.checked);
     }
-
+    // If the element is unchecked, remove the publicNotifications from localStorage
     if (checkboxTwo.checked) {
-        // Save the HTML to localStorage
-        localStorage.setItem("publicNotifications", checkboxTwo.checked);
-    } else {
         localStorage.removeItem("publicNotifications", checkboxTwo.checked);
-    }
-
+    }   
+    
     
 }, false);
 
